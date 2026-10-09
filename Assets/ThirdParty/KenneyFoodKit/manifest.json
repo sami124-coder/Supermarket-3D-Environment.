@@ -1,0 +1,565 @@
+[
+  {
+    "name": "apple",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/apple.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/apple.fbx",
+    "sha256": "ad7906e144d4188787f581a801251a4cf2587339c7d7bfb35be71052478177b1",
+    "dimensionsMetres": [
+      0.1963,
+      0.1963,
+      0.1908
+    ],
+    "materials": [
+      "brown",
+      "green",
+      "red"
+    ]
+  },
+  {
+    "name": "banana",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/banana.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/banana.fbx",
+    "sha256": "847596e43a392c601005db4b51970d557dcf59f164abc8a8a9a6e4266b3e7430",
+    "dimensionsMetres": [
+      0.1376,
+      0.6299,
+      0.1958
+    ],
+    "materials": [
+      "brownDark",
+      "yellow"
+    ]
+  },
+  {
+    "name": "broccoli",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/broccoli.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/broccoli.fbx",
+    "sha256": "b2c9e7f6b59c79d54e482fea7f0d48652d242b255fc751cb0e69d50af3b51d0d",
+    "dimensionsMetres": [
+      0.3752,
+      0.3752,
+      0.4217
+    ],
+    "materials": [
+      "green",
+      "greenDark"
+    ]
+  },
+  {
+    "name": "carrot",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/carrot.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/carrot.fbx",
+    "sha256": "d94c1a8603563d34fe47f0eba3174ac9fdf93659f65cedd851ec1f5e72cf0917",
+    "dimensionsMetres": [
+      0.3431,
+      0.3431,
+      0.7163
+    ],
+    "materials": [
+      "green",
+      "orange"
+    ]
+  },
+  {
+    "name": "grapes",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/grapes.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/grapes.fbx",
+    "sha256": "1d046d777611ad53d9347d616e38220e9777dfd6fa8c5b8fcfccebd3becf64fa",
+    "dimensionsMetres": [
+      0.279,
+      0.2386,
+      0.4226
+    ],
+    "materials": [
+      "brownDark",
+      "green",
+      "purple"
+    ]
+  },
+  {
+    "name": "pineapple",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/pineapple.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/pineapple.fbx",
+    "sha256": "e70d945e034f4b00a0712f8c30e55a30a72361416751ae298264f05d7eee4257",
+    "dimensionsMetres": [
+      0.2412,
+      0.2448,
+      0.4716
+    ],
+    "materials": [
+      "green",
+      "yellow"
+    ]
+  },
+  {
+    "name": "tomato",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/tomato.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/tomato.fbx",
+    "sha256": "79f500b966788d5fc4639e844fd5f05dbec1b0c1ad73dc1d529c43a64b7256f5",
+    "dimensionsMetres": [
+      0.1697,
+      0.1697,
+      0.1377
+    ],
+    "materials": [
+      "green",
+      "red"
+    ]
+  },
+  {
+    "name": "pear",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/pear.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/pear.fbx",
+    "sha256": "8f912536607aecc272c200ee67fe324c872dd5ea6b2b7593d612df341966e578",
+    "dimensionsMetres": [
+      0.1963,
+      0.1963,
+      0.2708
+    ],
+    "materials": [
+      "brown",
+      "green"
+    ]
+  },
+  {
+    "name": "lemon",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/lemon.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/lemon.fbx",
+    "sha256": "2be97cf8474379c09402573372da9f829ea644b2359a2ccb04672a4d5aecd324",
+    "dimensionsMetres": [
+      0.1732,
+      0.2,
+      0.224
+    ],
+    "materials": [
+      "brownDark",
+      "yellow"
+    ]
+  },
+  {
+    "name": "watermelon",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/watermelon.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/watermelon.fbx",
+    "sha256": "6628b8541f0027d315c56399e81ac1e342ea240ccebc9cc8dbaa49a4654e83a5",
+    "dimensionsMetres": [
+      0.5497,
+      0.5497,
+      0.4761
+    ],
+    "materials": [
+      "brown",
+      "brownDarkest",
+      "green",
+      "greenDark",
+      "red",
+      "yellow"
+    ]
+  },
+  {
+    "name": "cabbage",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/cabbage.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/cabbage.fbx",
+    "sha256": "1ca2904928ac1495c361e1426865697f802d4476e8c6085ece2020a45d74cd75",
+    "dimensionsMetres": [
+      0.3795,
+      0.4036,
+      0.3074
+    ],
+    "materials": [
+      "_defaultMat",
+      "green"
+    ]
+  },
+  {
+    "name": "eggplant",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/eggplant.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/eggplant.fbx",
+    "sha256": "af441c2d8ebe4f9ed75fdcc4c60adfc055c5ebe9e1ce9f9d5607b331f47adedf",
+    "dimensionsMetres": [
+      0.204,
+      0.2156,
+      0.4052
+    ],
+    "materials": [
+      "_defaultMat",
+      "green",
+      "purple"
+    ]
+  },
+  {
+    "name": "cauliflower",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/cauliflower.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/cauliflower.fbx",
+    "sha256": "9e27f876a7b1a6dadaeb07e4b9e3f53cfea53efb308bcd85ba46eec6e238d13c",
+    "dimensionsMetres": [
+      0.3795,
+      0.4036,
+      0.3074
+    ],
+    "materials": [
+      "_defaultMat",
+      "green"
+    ]
+  },
+  {
+    "name": "corn",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/corn.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/corn.fbx",
+    "sha256": "2e71e76d4c3ae5519926e6526ad2db75cabf60059b48f4cdc4afa9c0f2f98c64",
+    "dimensionsMetres": [
+      0.3432,
+      0.3002,
+      0.3162
+    ],
+    "materials": [
+      "green",
+      "yellow"
+    ]
+  },
+  {
+    "name": "strawberry",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/strawberry.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/strawberry.fbx",
+    "sha256": "03dc64c2f213d6f81fc3c73db1ae3d6630765296d9ce67af846fef47010a6059",
+    "dimensionsMetres": [
+      0.1197,
+      0.1197,
+      0.177
+    ],
+    "materials": [
+      "brownLight",
+      "green",
+      "red"
+    ]
+  },
+  {
+    "name": "coconut",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/coconut.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/coconut.fbx",
+    "sha256": "39cdec317d49274eb94ed2f9427b0c2e64ee692639fb7058652a13ccf806b6ac",
+    "dimensionsMetres": [
+      0.2484,
+      0.2484,
+      0.2484
+    ],
+    "materials": [
+      "_defaultMat",
+      "brownDark"
+    ]
+  },
+  {
+    "name": "loaf",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/loaf.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/loaf.fbx",
+    "sha256": "757ad604cf6d97fbf1a6f42cee813f041da382111addc14401b0c2307efe5a57",
+    "dimensionsMetres": [
+      0.5797,
+      0.3659,
+      0.4423
+    ],
+    "materials": [
+      "brown",
+      "brownLight"
+    ]
+  },
+  {
+    "name": "loafBaguette",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/loafBaguette.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/loafBaguette.fbx",
+    "sha256": "4db274859ce5c88cb5d789f145a70c0bbea827f92b25c87a39f2842eefd68088",
+    "dimensionsMetres": [
+      0.83,
+      0.25,
+      0.25
+    ],
+    "materials": [
+      "brown",
+      "brownLight"
+    ]
+  },
+  {
+    "name": "bread",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/bread.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/bread.fbx",
+    "sha256": "732b2317ca8cd8131eb0d671b47c3540693eaa3ba0c2c9734630a512457a715e",
+    "dimensionsMetres": [
+      0.4423,
+      0.3659,
+      0.0397
+    ],
+    "materials": [
+      "brown",
+      "brownLight"
+    ]
+  },
+  {
+    "name": "croissant",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/croissant.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/croissant.fbx",
+    "sha256": "f9cc53959a98d4a89850ccd30b5af992d01ffcceea2de2ad296683938a4abe75",
+    "dimensionsMetres": [
+      0.3461,
+      0.4777,
+      0.1936
+    ],
+    "materials": [
+      "brown"
+    ]
+  },
+  {
+    "name": "donutChocolate",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/donutChocolate.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/donutChocolate.fbx",
+    "sha256": "6e65045643ae504b438ab9dfe1d783cb139893432cfa553167c884279eccda6b",
+    "dimensionsMetres": [
+      0.2451,
+      0.283,
+      0.0889
+    ],
+    "materials": [
+      "brownDark",
+      "brownLight"
+    ]
+  },
+  {
+    "name": "muffin",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/muffin.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/muffin.fbx",
+    "sha256": "752a327ac70409b8ae75a29efa66717fa21e9f57e04b3a2bd9f5e0d43d7fd2cf",
+    "dimensionsMetres": [
+      0.3047,
+      0.2639,
+      0.2486
+    ],
+    "materials": [
+      "brown",
+      "brownDark"
+    ]
+  },
+  {
+    "name": "cupcake",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/cupcake.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/cupcake.fbx",
+    "sha256": "b733106fe952b9f5047ec6dec208248ae50884562710158e4fea30d866efa48d",
+    "dimensionsMetres": [
+      0.3552,
+      0.3076,
+      0.4238
+    ],
+    "materials": [
+      "_defaultMat",
+      "brown",
+      "brownDark",
+      "green",
+      "purpleLight",
+      "red"
+    ]
+  },
+  {
+    "name": "cakeBirthday",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/cakeBirthday.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/cakeBirthday.fbx",
+    "sha256": "64b6cd87fbb42a921b9cc8dfc1049c78ae2b9c9bed9f4dccfec375c488d029bf",
+    "dimensionsMetres": [
+      0.8303,
+      0.799,
+      0.3638
+    ],
+    "materials": [
+      "_defaultMat",
+      "brownDark",
+      "brownDarkest",
+      "purple",
+      "purpleLight",
+      "red",
+      "yellow"
+    ]
+  },
+  {
+    "name": "cookieChocolate",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/cookieChocolate.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/cookieChocolate.fbx",
+    "sha256": "ebbbcb2fa48e3e031a223d6cd6eb9cac4673b0ee40238716deb7d9ab5889de28",
+    "dimensionsMetres": [
+      0.1212,
+      0.14,
+      0.06
+    ],
+    "materials": [
+      "_defaultMat",
+      "brownDarkest"
+    ]
+  },
+  {
+    "name": "carton",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/carton.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/carton.fbx",
+    "sha256": "f129ecf48ae2a9cda7cf230aaeea01adeb06cfd1cf5c70162ae64bade28172d6",
+    "dimensionsMetres": [
+      0.23,
+      0.23,
+      0.5905
+    ],
+    "materials": [
+      "_defaultMat",
+      "purple",
+      "white"
+    ]
+  },
+  {
+    "name": "cartonSmall",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/cartonSmall.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/cartonSmall.fbx",
+    "sha256": "3943aa0702a948be9c0042cf8c79326288d74a66153617a5a69937072f23794b",
+    "dimensionsMetres": [
+      0.23,
+      0.23,
+      0.3905
+    ],
+    "materials": [
+      "_defaultMat",
+      "purpleLight",
+      "white"
+    ]
+  },
+  {
+    "name": "sodaBottle",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/sodaBottle.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/sodaBottle.fbx",
+    "sha256": "81f175830612bf32a486b984e91174f8c07208fa80c332dc20f2a18050631c22",
+    "dimensionsMetres": [
+      0.1805,
+      0.1563,
+      0.5604
+    ],
+    "materials": [
+      "brownDark",
+      "red"
+    ]
+  },
+  {
+    "name": "sodaCan",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/sodaCan.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/sodaCan.fbx",
+    "sha256": "982bc45eed90ea7eb8c541644ff4f2211754692fa2609d04a81a7c74a83f3121",
+    "dimensionsMetres": [
+      0.2246,
+      0.2246,
+      0.33
+    ],
+    "materials": [
+      "brownDarkest",
+      "greyDark",
+      "greyLight",
+      "red"
+    ]
+  },
+  {
+    "name": "bottleOil",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/bottleOil.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/bottleOil.fbx",
+    "sha256": "f87494aebee6a3eced94ed844252d10f9280487ad71372b0f36c2d3fd57295d1",
+    "dimensionsMetres": [
+      0.14,
+      0.14,
+      0.61
+    ],
+    "materials": [
+      "brown",
+      "brownLight",
+      "green"
+    ]
+  },
+  {
+    "name": "bottleKetchup",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/bottleKetchup.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/bottleKetchup.fbx",
+    "sha256": "f3e463bd4f45bb61bece48e42abae75a2c412742baa1edc87233870d8dd2cbd6",
+    "dimensionsMetres": [
+      0.1441,
+      0.1664,
+      0.3931
+    ],
+    "materials": [
+      "red"
+    ]
+  },
+  {
+    "name": "peanutButter",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/peanutButter.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/peanutButter.fbx",
+    "sha256": "bba9843226e19ccb97808a9f74ea5d6a434bb00ec6d39f520271c79daa0a4841",
+    "dimensionsMetres": [
+      0.2359,
+      0.2359,
+      0.2958
+    ],
+    "materials": [
+      "brownDark",
+      "brownLight",
+      "green"
+    ]
+  },
+  {
+    "name": "honey",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/honey.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/honey.fbx",
+    "sha256": "9942c6a5c5034a2cb5616743dd223fc2b5e263397cb37b0b45549982e0c0bd33",
+    "dimensionsMetres": [
+      0.326,
+      0.326,
+      0.316
+    ],
+    "materials": [
+      "brownDark",
+      "brownLight",
+      "yellow"
+    ]
+  },
+  {
+    "name": "fish",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/fish.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/fish.fbx",
+    "sha256": "f4b3fb91f0c4073f0b2e996476d9a34505130e0aa0537b64ae9be94363b5330f",
+    "dimensionsMetres": [
+      0.1978,
+      0.6208,
+      0.3222
+    ],
+    "materials": [
+      "_defaultMat",
+      "greyLight",
+      "pink"
+    ]
+  },
+  {
+    "name": "cheese",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/cheese.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/cheese.fbx",
+    "sha256": "40e0550beab5ab89c3a9e59b48cfd9878900427cb9289fc5eaa9f92e354f4e8c",
+    "dimensionsMetres": [
+      0.7589,
+      0.7589,
+      0.22
+    ],
+    "materials": [
+      "_defaultMat",
+      "brownLight",
+      "yellow"
+    ]
+  },
+  {
+    "name": "bag",
+    "source": "Assets/ThirdParty/KenneyFoodKit/Source/bag.glb",
+    "fbx": "Assets/ThirdParty/KenneyFoodKit/Models/bag.fbx",
+    "sha256": "8c86ed654a3a120054b335a7b328da046750deb0a525fdcc30a95793a586dcf2",
+    "dimensionsMetres": [
+      0.2201,
+      0.4118,
+      0.5998
+    ],
+    "materials": [
+      "brownLight"
+    ]
+  }
+]

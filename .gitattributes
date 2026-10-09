@@ -1,0 +1,12 @@
+*.fbx binary
+*.blend binary
+*.glb binary
+*.png binary
+*.cs text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+# Preserve third-party source and license bytes for the recorded checksums.
+Assets/ThirdParty/**/Source/* -text
+Assets/ThirdParty/**/LICENSE.txt -text
+Docs/Licenses/* -text

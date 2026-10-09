@@ -1,0 +1,262 @@
+[
+  {
+    "name": "kitchenCoffeeMachine",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/kitchenCoffeeMachine.glb",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/kitchenCoffeeMachine.fbx",
+    "sha256": "063f582c6fa0f00a9f24e3393dac2295491c4becdaf5513c893ab1a2826b6ec3",
+    "dimensionsMetres": [
+      0.1895,
+      0.2402,
+      0.1775
+    ],
+    "materials": [
+      "carpetWhite",
+      "metal",
+      "metalMedium"
+    ]
+  },
+  {
+    "name": "kitchenFridgeLarge",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/kitchenFridgeLarge.glb",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/kitchenFridgeLarge.fbx",
+    "sha256": "5851cc59c7e12f6f34a01a2ea93d5b9540be4078c1b703f517239fcede98fb32",
+    "dimensionsMetres": [
+      0.52,
+      0.4055,
+      0.92
+    ],
+    "materials": [
+      "metalLight",
+      "metalMedium"
+    ]
+  },
+  {
+    "name": "kitchenCabinet",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/kitchenCabinet.glb",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/kitchenCabinet.fbx",
+    "sha256": "7238c57778935ae25db5e57e9f7af3ba7068c71b005ff7cfbff3b6f3b1a13200",
+    "dimensionsMetres": [
+      0.43,
+      0.45,
+      0.45
+    ],
+    "materials": [
+      "metal",
+      "wood",
+      "woodDark"
+    ]
+  },
+  {
+    "name": "kitchenCabinetDrawer",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/kitchenCabinetDrawer.glb",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/kitchenCabinetDrawer.fbx",
+    "sha256": "6f784807e3cadb15b4d2d3db726d93357ea5e6c4f2b6e4c9c064048a2d1d9cfc",
+    "dimensionsMetres": [
+      0.43,
+      0.45,
+      0.45
+    ],
+    "materials": [
+      "metal",
+      "wood",
+      "woodDark"
+    ]
+  },
+  {
+    "name": "kitchenSink",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/kitchenSink.glb",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/kitchenSink.fbx",
+    "sha256": "7b9610277d71f00dcf1bba49cf4d98d77ce5177e84bf76c7da2f8893e542f743",
+    "dimensionsMetres": [
+      0.43,
+      0.45,
+      0.49
+    ],
+    "materials": [
+      "_defaultMat",
+      "metal",
+      "metalDark",
+      "metalLight",
+      "wood",
+      "woodDark"
+    ]
+  },
+  {
+    "name": "toaster",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/toaster.glb",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/toaster.fbx",
+    "sha256": "38c1fb7b122be9997758c8ee855d87f28014cf282f24d66d39f4e8d8b236d2af",
+    "dimensionsMetres": [
+      0.188,
+      0.1,
+      0.13
+    ],
+    "materials": [
+      "metal",
+      "metalMedium"
+    ]
+  },
+  {
+    "name": "tableRound",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/tableRound.glb",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/tableRound.fbx",
+    "sha256": "f8daea9124a542a00b7bdacfddac82dc468573d43e44d7b54dd6316e9695754b",
+    "dimensionsMetres": [
+      0.6928,
+      0.8,
+      0.3667
+    ],
+    "materials": [
+      "wood"
+    ]
+  },
+  {
+    "name": "chairRounded",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/chairRounded.glb",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/chairRounded.fbx",
+    "sha256": "53f4933ec547179c499f04dbda1231cf44b83ec82c7f4ab981cdf680aee5c973",
+    "dimensionsMetres": [
+      0.2,
+      0.2,
+      0.455
+    ],
+    "materials": [
+      "wood"
+    ]
+  },
+  {
+    "name": "stoolBar",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/stoolBar.glb",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/stoolBar.fbx",
+    "sha256": "a86167a9f92401a61fec7e509ad089ecc552d0f299743add3aeb919acb24e341",
+    "dimensionsMetres": [
+      0.2654,
+      0.2299,
+      0.435
+    ],
+    "materials": [
+      "carpet",
+      "wood"
+    ]
+  },
+  {
+    "name": "kitchenBlender",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/kitchenBlender.glb",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/kitchenBlender.fbx",
+    "sha256": "f471defb5b2b1cf3b949a1a8aaef0a8b727afe662b0815068cf4e963325a3c1f",
+    "dimensionsMetres": [
+      0.1358,
+      0.1091,
+      0.2275
+    ],
+    "materials": [
+      "glass",
+      "metal",
+      "metalMedium"
+    ]
+  },
+  {
+    "name": "trashcan",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/trashcan.glb",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/trashcan.fbx",
+    "sha256": "e0ccc1fe50cbd05386477fdff527171d1cf7c0de2ba7ff3233f8d9561feb2561",
+    "dimensionsMetres": [
+      0.2077,
+      0.2341,
+      0.4279
+    ],
+    "materials": [
+      "metal",
+      "metalDark"
+    ]
+  },
+  {
+    "name": "pottedPlant",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/pottedPlant.obj",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/pottedPlant.fbx",
+    "sha256": "839e75290814756dee97e479fa462a7477cecda06db0707a520dc0f29130fc02",
+    "dimensionsMetres": [
+      0.2121,
+      0.2415,
+      0.654
+    ],
+    "materials": [
+      "plant",
+      "wood",
+      "woodDark"
+    ]
+  },
+  {
+    "name": "plantSmall1",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/plantSmall1.obj",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/plantSmall1.fbx",
+    "sha256": "04aa1237b63f0221678a89bc4a819902074bed20d9badee6b0a034c116f52c8c",
+    "dimensionsMetres": [
+      0.0947,
+      0.0947,
+      0.14
+    ],
+    "materials": [
+      "plant",
+      "wood"
+    ]
+  },
+  {
+    "name": "plantSmall2",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/plantSmall2.obj",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/plantSmall2.fbx",
+    "sha256": "4fca71070fc4d53b9289d0426b3e5a8d59d3cd3424464cb0386b4c3692a69713",
+    "dimensionsMetres": [
+      0.0947,
+      0.0947,
+      0.14
+    ],
+    "materials": [
+      "plant",
+      "wood"
+    ]
+  },
+  {
+    "name": "plantSmall3",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/plantSmall3.obj",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/plantSmall3.fbx",
+    "sha256": "e19e924fe7966ca6d82d160b9c29d05a2b63fb7cfe3d0542ffdbf27d3083db12",
+    "dimensionsMetres": [
+      0.098,
+      0.0849,
+      0.145
+    ],
+    "materials": [
+      "plant",
+      "wood"
+    ]
+  },
+  {
+    "name": "bookcaseOpen",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/bookcaseOpen.obj",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/bookcaseOpen.fbx",
+    "sha256": "c582b0306529553018eb5a9f58eef35c7383e566a0613d32dea41612cfaded8c",
+    "dimensionsMetres": [
+      0.4,
+      0.25,
+      0.88
+    ],
+    "materials": [
+      "wood"
+    ]
+  },
+  {
+    "name": "bookcaseOpenLow",
+    "source": "Assets/ThirdParty/KenneyFurnitureKit/Source/bookcaseOpenLow.obj",
+    "fbx": "Assets/ThirdParty/KenneyFurnitureKit/Models/bookcaseOpenLow.fbx",
+    "sha256": "bee575ba5ba4f2c7cb77c688d98c83d7bbfa70d1f6f80717afaa5586f04b018a",
+    "dimensionsMetres": [
+      0.4,
+      0.25,
+      0.4
+    ],
+    "materials": [
+      "wood"
+    ]
+  }
+]

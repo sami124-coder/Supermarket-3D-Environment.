@@ -1,0 +1,16 @@
+/Library/
+/Temp/
+/Obj/
+/Builds/
+/Logs/
+/UserSettings/
+/MemoryCaptures/
+/.vs/
+/.idea/
+*.csproj
+*.sln
+*.user
+*.blend1
+*.blend2
+__pycache__/
+/Artifacts/

@@ -1,0 +1,4383 @@
+{
+  "schemaVersion": 1,
+  "materials": [
+    {
+      "name": "SIPO_Orange",
+      "color": [
+        1.0,
+        0.47058823529411764,
+        0.047058823529411764
+      ],
+      "roughness": 0.24,
+      "metallic": 0.22,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Apricot",
+      "color": [
+        1.0,
+        0.6862745098039216,
+        0.25882352941176473
+      ],
+      "roughness": 0.34,
+      "metallic": 0.08,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Navy",
+      "color": [
+        0.07450980392156863,
+        0.20784313725490197,
+        0.403921568627451
+      ],
+      "roughness": 0.27,
+      "metallic": 0.22,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Blue",
+      "color": [
+        0.09019607843137255,
+        0.42745098039215684,
+        0.8666666666666667
+      ],
+      "roughness": 0.27,
+      "metallic": 0.2,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Cream",
+      "color": [
+        1.0,
+        0.9450980392156862,
+        0.8313725490196079
+      ],
+      "roughness": 0.3,
+      "metallic": 0.06,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_White",
+      "color": [
+        1.0,
+        0.9921568627450981,
+        0.9647058823529412
+      ],
+      "roughness": 0.36,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Gold",
+      "color": [
+        0.8470588235294118,
+        0.6039215686274509,
+        0.2627450980392157
+      ],
+      "roughness": 0.25,
+      "metallic": 0.75,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Chrome",
+      "color": [
+        0.792156862745098,
+        0.8470588235294118,
+        0.8784313725490196
+      ],
+      "roughness": 0.22,
+      "metallic": 0.82,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Black",
+      "color": [
+        0.0784313725490196,
+        0.12941176470588237,
+        0.19607843137254902
+      ],
+      "roughness": 0.4,
+      "metallic": 0.3,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Wood",
+      "color": [
+        0.7098039215686275,
+        0.44313725490196076,
+        0.22745098039215686
+      ],
+      "roughness": 0.48,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Oak",
+      "color": [
+        0.8509803921568627,
+        0.6078431372549019,
+        0.34509803921568627
+      ],
+      "roughness": 0.45,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Green",
+      "color": [
+        0.09803921568627451,
+        0.5058823529411764,
+        0.3176470588235294
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Leaf",
+      "color": [
+        0.20784313725490197,
+        0.5764705882352941,
+        0.2901960784313726
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_LeafLight",
+      "color": [
+        0.4392156862745098,
+        0.7098039215686275,
+        0.26666666666666666
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_LeafDark",
+      "color": [
+        0.08627450980392157,
+        0.33725490196078434,
+        0.21176470588235294
+      ],
+      "roughness": 0.44,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Pink",
+      "color": [
+        0.8509803921568627,
+        0.12941176470588237,
+        0.4392156862745098
+      ],
+      "roughness": 0.32,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Red",
+      "color": [
+        0.9372549019607843,
+        0.25882352941176473,
+        0.21568627450980393
+      ],
+      "roughness": 0.32,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Yellow",
+      "color": [
+        1.0,
+        0.8431372549019608,
+        0.2901960784313726
+      ],
+      "roughness": 0.3,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Purple",
+      "color": [
+        0.4823529411764706,
+        0.32941176470588235,
+        0.7803921568627451
+      ],
+      "roughness": 0.34,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Teal",
+      "color": [
+        0.10196078431372549,
+        0.6509803921568628,
+        0.6784313725490196
+      ],
+      "roughness": 0.27,
+      "metallic": 0.1,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Soil",
+      "color": [
+        0.2196078431372549,
+        0.15294117647058825,
+        0.11764705882352941
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_WarmLight",
+      "color": [
+        1.0,
+        0.8235294117647058,
+        0.6039215686274509
+      ],
+      "roughness": 0.2,
+      "metallic": 0,
+      "emission": [
+        1.0,
+        0.8235294117647058,
+        0.6039215686274509
+      ],
+      "emissionStrength": 4
+    },
+    {
+      "name": "SIPO_WhiteLight",
+      "color": [
+        1.0,
+        0.9450980392156862,
+        0.8431372549019608
+      ],
+      "roughness": 0.2,
+      "metallic": 0,
+      "emission": [
+        1.0,
+        0.9450980392156862,
+        0.8431372549019608
+      ],
+      "emissionStrength": 3
+    },
+    {
+      "name": "SIPO_BlueLight",
+      "color": [
+        0.17254901960784313,
+        0.6196078431372549,
+        1.0
+      ],
+      "roughness": 0.2,
+      "metallic": 0,
+      "emission": [
+        0.17254901960784313,
+        0.6196078431372549,
+        1.0
+      ],
+      "emissionStrength": 3
+    },
+    {
+      "name": "SIPO_PinkLight",
+      "color": [
+        1.0,
+        0.4745098039215686,
+        0.7411764705882353
+      ],
+      "roughness": 0.2,
+      "metallic": 0,
+      "emission": [
+        1.0,
+        0.4745098039215686,
+        0.7411764705882353
+      ],
+      "emissionStrength": 2
+    },
+    {
+      "name": "SIPO_SignWhite",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "roughness": 0.3,
+      "metallic": 0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 1.3
+    },
+    {
+      "name": "SIPO_Night",
+      "color": [
+        0.023529411764705882,
+        0.09019607843137255,
+        0.26666666666666666
+      ],
+      "roughness": 0.4,
+      "metallic": 0.1,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Mint",
+      "color": [
+        0.7254901960784313,
+        0.8745098039215686,
+        0.7764705882352941
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "SIPO_Glass",
+      "color": [
+        0.5450980392156862,
+        0.6862745098039216,
+        0.7215686274509804
+      ],
+      "roughness": 0.12,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "transparent": true,
+      "alpha": 0.18
+    },
+    {
+      "name": "_defaultMat",
+      "color": [
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "_defaultMat.001",
+      "color": [
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "_defaultMat.002",
+      "color": [
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "_defaultMat.003",
+      "color": [
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "_defaultMat.004",
+      "color": [
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brown",
+      "color": [
+        0.9199411688679942,
+        0.7764671542604309,
+        0.6681186523035422
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brown.001",
+      "color": [
+        0.9199411688679942,
+        0.7764671542604309,
+        0.6681186523035422
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brown.002",
+      "color": [
+        0.9199411688679942,
+        0.7764671542604309,
+        0.6681186523035422
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brown.003",
+      "color": [
+        0.9199411688679942,
+        0.7764671542604309,
+        0.6681186523035422
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brown.004",
+      "color": [
+        0.9199411688679942,
+        0.7764671542604309,
+        0.6681186523035422
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brown.005",
+      "color": [
+        0.9199411688679942,
+        0.7764671542604309,
+        0.6681186523035422
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brown.006",
+      "color": [
+        0.9199411688679942,
+        0.7764671542604309,
+        0.6681186523035422
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brown.007",
+      "color": [
+        0.9199411688679942,
+        0.7764671542604309,
+        0.6681186523035422
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownDark",
+      "color": [
+        0.8205324069887459,
+        0.6562823825455781,
+        0.564277125140586
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownDark.001",
+      "color": [
+        0.8205324069887459,
+        0.6562823825455781,
+        0.564277125140586
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownDark.002",
+      "color": [
+        0.8205324069887459,
+        0.6562823825455781,
+        0.564277125140586
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownDark.003",
+      "color": [
+        0.8205324069887459,
+        0.6562823825455781,
+        0.564277125140586
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownDark.004",
+      "color": [
+        0.8205324069887459,
+        0.6562823825455781,
+        0.564277125140586
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownDark.005",
+      "color": [
+        0.8205324069887459,
+        0.6562823825455781,
+        0.564277125140586
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownDark.006",
+      "color": [
+        0.8205324069887459,
+        0.6562823825455781,
+        0.564277125140586
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownDark.007",
+      "color": [
+        0.8205324069887459,
+        0.6562823825455781,
+        0.564277125140586
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownDarkest",
+      "color": [
+        0.5457180768713816,
+        0.43762978250208373,
+        0.40619976619636716
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownLight",
+      "color": [
+        0.989584985950953,
+        0.8924471241126772,
+        0.7667645610219354
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownLight.001",
+      "color": [
+        0.989584985950953,
+        0.8924471241126772,
+        0.7667645610219354
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownLight.002",
+      "color": [
+        0.989584985950953,
+        0.8924471241126772,
+        0.7667645610219354
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownLight.003",
+      "color": [
+        0.989584985950953,
+        0.8924471241126772,
+        0.7667645610219354
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownLight.004",
+      "color": [
+        0.989584985950953,
+        0.8924471241126772,
+        0.7667645610219354
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownLight.005",
+      "color": [
+        0.989584985950953,
+        0.8924471241126772,
+        0.7667645610219354
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "brownLight.006",
+      "color": [
+        0.989584985950953,
+        0.8924471241126772,
+        0.7667645610219354
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "green",
+      "color": [
+        0.6190007990381482,
+        0.8741656771269041,
+        0.7930753753537388
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "green.001",
+      "color": [
+        0.6190007990381482,
+        0.8741656771269041,
+        0.7930753753537388
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "green.002",
+      "color": [
+        0.6190007990381482,
+        0.8741656771269041,
+        0.7930753753537388
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "green.003",
+      "color": [
+        0.6190007990381482,
+        0.8741656771269041,
+        0.7930753753537388
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "green.004",
+      "color": [
+        0.6190007990381482,
+        0.8741656771269041,
+        0.7930753753537388
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "green.005",
+      "color": [
+        0.6190007990381482,
+        0.8741656771269041,
+        0.7930753753537388
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "green.006",
+      "color": [
+        0.6190007990381482,
+        0.8741656771269041,
+        0.7930753753537388
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "green.007",
+      "color": [
+        0.6190007990381482,
+        0.8741656771269041,
+        0.7930753753537388
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "greenDark",
+      "color": [
+        0.5183005919172589,
+        0.7340640699565294,
+        0.6651850891023338
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "greyDark",
+      "color": [
+        0.7544060835360149,
+        0.7977377471499069,
+        0.8360069817357771
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "greyLight",
+      "color": [
+        0.9275999659692701,
+        0.95560315710636,
+        0.9790225238439932
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "greyLight.001",
+      "color": [
+        0.9275999659692701,
+        0.95560315710636,
+        0.9790225238439932
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "orange",
+      "color": [
+        0.9999999999999999,
+        0.702096931103188,
+        0.5142316632386907
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "pink",
+      "color": [
+        0.9999999999999999,
+        0.7593809949359072,
+        0.7740563979747093
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "purple",
+      "color": [
+        0.8115152148844423,
+        0.7716357874134979,
+        0.9592555182084858
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "purpleLight",
+      "color": [
+        0.9592555182084858,
+        0.8000556056938294,
+        0.9141413186282693
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "purpleLight.001",
+      "color": [
+        0.9592555182084858,
+        0.8000556056938294,
+        0.9141413186282693
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "red",
+      "color": [
+        0.9592555182084858,
+        0.6125010331406235,
+        0.6059114289422556
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "red.001",
+      "color": [
+        0.9592555182084858,
+        0.6125010331406235,
+        0.6059114289422556
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "red.002",
+      "color": [
+        0.9592555182084858,
+        0.6125010331406235,
+        0.6059114289422556
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "red.003",
+      "color": [
+        0.9592555182084858,
+        0.6125010331406235,
+        0.6059114289422556
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "red.004",
+      "color": [
+        0.9592555182084858,
+        0.6125010331406235,
+        0.6059114289422556
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "red.005",
+      "color": [
+        0.9592555182084858,
+        0.6125010331406235,
+        0.6059114289422556
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "white",
+      "color": [
+        0.9754679438702997,
+        0.9772473759144528,
+        0.9843225402851034
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "white.001",
+      "color": [
+        0.9754679438702997,
+        0.9772473759144528,
+        0.9843225402851034
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "yellow",
+      "color": [
+        0.9825600785884171,
+        0.8679587158450065,
+        0.5457180768713816
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "yellow.001",
+      "color": [
+        0.9825600785884171,
+        0.8679587158450065,
+        0.5457180768713816
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "yellow.002",
+      "color": [
+        0.9825600785884171,
+        0.8679587158450065,
+        0.5457180768713816
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    },
+    {
+      "name": "yellow.003",
+      "color": [
+        0.9825600785884171,
+        0.8679587158450065,
+        0.5457180768713816
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0
+    }
+  ],
+  "lights": [
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        -18,
+        4.95,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        -18,
+        4.95,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        -18,
+        4.95,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        -18,
+        4.95,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        -9,
+        12.05,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        -9,
+        12.05,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        -9,
+        12.05,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        -9,
+        12.05,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        0,
+        12.05,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        0,
+        12.05,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        0,
+        12.05,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        0,
+        12.05,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        9,
+        12.05,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        9,
+        12.05,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        9,
+        12.05,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        9,
+        12.05,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        18,
+        4.95,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        18,
+        4.95,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        18,
+        4.95,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Warm ceiling wash",
+      "type": "point",
+      "position": [
+        18,
+        4.95,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8352941176470589,
+        0.6352941176470588
+      ],
+      "intensity": 2.4,
+      "range": 13,
+      "spotAngle": 75
+    },
+    {
+      "name": "Atrium amber bounce",
+      "type": "point",
+      "position": [
+        -8,
+        9.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.6823529411764706,
+        0.3411764705882353
+      ],
+      "intensity": 2.8,
+      "range": 14,
+      "spotAngle": 75
+    },
+    {
+      "name": "Atrium amber bounce",
+      "type": "point",
+      "position": [
+        8,
+        9.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.6823529411764706,
+        0.3411764705882353
+      ],
+      "intensity": 2.8,
+      "range": 14,
+      "spotAngle": 75
+    },
+    {
+      "name": "Atrium amber bounce",
+      "type": "point",
+      "position": [
+        0,
+        9.8,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.6823529411764706,
+        0.3411764705882353
+      ],
+      "intensity": 2.8,
+      "range": 14,
+      "spotAngle": 75
+    },
+    {
+      "name": "Atrium amber bounce",
+      "type": "point",
+      "position": [
+        0,
+        9.8,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.6823529411764706,
+        0.3411764705882353
+      ],
+      "intensity": 2.8,
+      "range": 14,
+      "spotAngle": 75
+    },
+    {
+      "name": "Entrance daylight",
+      "type": "point",
+      "position": [
+        0,
+        8,
+        19
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        0.7490196078431373,
+        0.8509803921568627,
+        1.0
+      ],
+      "intensity": 2,
+      "range": 20,
+      "spotAngle": 75
+    },
+    {
+      "name": "Welcome warm pool",
+      "type": "point",
+      "position": [
+        0,
+        6,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.7450980392156863,
+        0.4588235294117647
+      ],
+      "intensity": 1.5,
+      "range": 8,
+      "spotAngle": 75
+    },
+    {
+      "name": "Canopy blue atmosphere",
+      "type": "point",
+      "position": [
+        0,
+        11.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        0.2235294117647059,
+        0.47058823529411764,
+        1.0
+      ],
+      "intensity": 1.8,
+      "range": 12,
+      "spotAngle": 75
+    },
+    {
+      "name": "Gallery warm wash",
+      "type": "point",
+      "position": [
+        -18,
+        11.4,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8784313725490196,
+        0.6901960784313725
+      ],
+      "intensity": 2.5,
+      "range": 20,
+      "spotAngle": 75
+    },
+    {
+      "name": "Gallery warm wash",
+      "type": "point",
+      "position": [
+        18,
+        11.4,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1.0,
+        0.8784313725490196,
+        0.6901960784313725
+      ],
+      "intensity": 2.5,
+      "range": 20,
+      "spotAngle": 75
+    }
+  ],
+  "colliders": [
+    {
+      "name": "Ground",
+      "position": [
+        0,
+        -0.2,
+        0
+      ],
+      "size": [
+        49,
+        0.4,
+        45
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Rear wall",
+      "position": [
+        0,
+        6.5,
+        -22
+      ],
+      "size": [
+        49,
+        13,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Side wall",
+      "position": [
+        -24,
+        6.5,
+        0
+      ],
+      "size": [
+        0.5,
+        13,
+        44
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Upper side gallery",
+      "position": [
+        -19.0,
+        5.56,
+        0
+      ],
+      "size": [
+        10,
+        0.48,
+        44
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Side wall",
+      "position": [
+        24,
+        6.5,
+        0
+      ],
+      "size": [
+        0.5,
+        13,
+        44
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Upper side gallery",
+      "position": [
+        19.0,
+        5.56,
+        0
+      ],
+      "size": [
+        10,
+        0.48,
+        44
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Upper rear gallery",
+      "position": [
+        0,
+        5.56,
+        -18.5
+      ],
+      "size": [
+        28,
+        0.48,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Gallery balustrade",
+      "position": [
+        -14,
+        6.35,
+        3.6
+      ],
+      "size": [
+        0.16,
+        1.1,
+        36.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Gallery balustrade",
+      "position": [
+        14,
+        6.35,
+        3.6
+      ],
+      "size": [
+        0.16,
+        1.1,
+        36.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Rear gallery balustrade",
+      "position": [
+        -3,
+        6.35,
+        -15
+      ],
+      "size": [
+        22,
+        1.1,
+        0.16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Column",
+      "position": [
+        -14,
+        6.3,
+        12
+      ],
+      "size": [
+        1.32,
+        12.6,
+        1.32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Column",
+      "position": [
+        -14,
+        6.3,
+        -3
+      ],
+      "size": [
+        1.32,
+        12.6,
+        1.32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Column",
+      "position": [
+        -14,
+        6.3,
+        -16
+      ],
+      "size": [
+        1.32,
+        12.6,
+        1.32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Column",
+      "position": [
+        14,
+        6.3,
+        12
+      ],
+      "size": [
+        1.32,
+        12.6,
+        1.32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Column",
+      "position": [
+        14,
+        6.3,
+        -3
+      ],
+      "size": [
+        1.32,
+        12.6,
+        1.32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Column",
+      "position": [
+        14,
+        6.3,
+        -16
+      ],
+      "size": [
+        1.32,
+        12.6,
+        1.32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Welcome desk",
+      "position": [
+        0,
+        0.7,
+        1
+      ],
+      "size": [
+        6.9,
+        1.4,
+        6.9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Produce island",
+      "position": [
+        -10,
+        0.8,
+        -1
+      ],
+      "size": [
+        6.3,
+        1.6,
+        6.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -18,
+        1.65,
+        -19.099999999999998
+      ],
+      "size": [
+        7.6000000000000005,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -9,
+        1.65,
+        -19.099999999999998
+      ],
+      "size": [
+        7.6000000000000005,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        0,
+        1.65,
+        -19.099999999999998
+      ],
+      "size": [
+        7.6000000000000005,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        9,
+        1.65,
+        -19.099999999999998
+      ],
+      "size": [
+        7.6000000000000005,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        18,
+        1.65,
+        -19.099999999999998
+      ],
+      "size": [
+        7.6000000000000005,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -18,
+        7.449999999999999,
+        -21.2
+      ],
+      "size": [
+        7.6000000000000005,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -9,
+        7.449999999999999,
+        -21.2
+      ],
+      "size": [
+        7.6000000000000005,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        0,
+        7.449999999999999,
+        -21.2
+      ],
+      "size": [
+        7.6000000000000005,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        9,
+        7.449999999999999,
+        -21.2
+      ],
+      "size": [
+        7.6000000000000005,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        18,
+        7.449999999999999,
+        -21.2
+      ],
+      "size": [
+        7.6000000000000005,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -20,
+        1.65,
+        8
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -20,
+        1.65,
+        6.9
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -20,
+        7.449999999999999,
+        8
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -20,
+        1.65,
+        0
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -20,
+        1.65,
+        -1.1
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -20,
+        7.449999999999999,
+        0
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -20,
+        1.65,
+        -8
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -20,
+        1.65,
+        -9.1
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -20,
+        7.449999999999999,
+        -8
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        20,
+        1.65,
+        8
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        20,
+        1.65,
+        6.9
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        20,
+        7.449999999999999,
+        8
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        20,
+        1.65,
+        0
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        20,
+        1.65,
+        -1.1
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        20,
+        7.449999999999999,
+        0
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        20,
+        1.65,
+        -8
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        20,
+        1.65,
+        -9.1
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        20,
+        7.449999999999999,
+        -8
+      ],
+      "size": [
+        5.1,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        -8,
+        1.65,
+        -13
+      ],
+      "size": [
+        5.5,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stocked shelf",
+      "position": [
+        0,
+        1.65,
+        -13
+      ],
+      "size": [
+        5.5,
+        3.3,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Bakery island",
+      "position": [
+        -17,
+        0.65,
+        -10
+      ],
+      "size": [
+        6,
+        1.3,
+        2.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        0.09999999999999998,
+        -3.65
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        0.29999999999999993,
+        -4.05
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        0.5,
+        -4.45
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        0.7,
+        -4.85
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        0.9,
+        -5.25
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        1.0999999999999999,
+        -5.65
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        1.3,
+        -6.050000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        1.4999999999999998,
+        -6.45
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        1.6999999999999997,
+        -6.85
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        1.9,
+        -7.25
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        2.0999999999999996,
+        -7.65
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        2.3,
+        -8.05
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        2.4999999999999996,
+        -8.450000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        2.7,
+        -8.85
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        2.9,
+        -9.25
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        3.0999999999999996,
+        -9.65
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        3.3,
+        -10.05
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        3.4999999999999996,
+        -10.450000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        3.7,
+        -10.85
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        3.9,
+        -11.25
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        4.1000000000000005,
+        -11.65
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        4.3,
+        -12.05
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        4.500000000000001,
+        -12.450000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        4.7,
+        -12.850000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        4.9,
+        -13.250000000000002
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        5.1,
+        -13.65
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        5.3,
+        -14.05
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        5.500000000000001,
+        -14.450000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        10,
+        5.7,
+        -14.850000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        0.09999999999999998,
+        -3.65
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        0.29999999999999993,
+        -4.05
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        0.5,
+        -4.45
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        0.7,
+        -4.85
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        0.9,
+        -5.25
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        1.0999999999999999,
+        -5.65
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        1.3,
+        -6.050000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        1.4999999999999998,
+        -6.45
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        1.6999999999999997,
+        -6.85
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        1.9,
+        -7.25
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        2.0999999999999996,
+        -7.65
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        2.3,
+        -8.05
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        2.4999999999999996,
+        -8.450000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        2.7,
+        -8.85
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        2.9,
+        -9.25
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        3.0999999999999996,
+        -9.65
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        3.3,
+        -10.05
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        3.4999999999999996,
+        -10.450000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        3.7,
+        -10.85
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        3.9,
+        -11.25
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        4.1000000000000005,
+        -11.65
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        4.3,
+        -12.05
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        4.500000000000001,
+        -12.450000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        4.7,
+        -12.850000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        4.9,
+        -13.250000000000002
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        5.1,
+        -13.65
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        5.3,
+        -14.05
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        5.500000000000001,
+        -14.450000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Escalator tread",
+      "position": [
+        12.55,
+        5.7,
+        -14.850000000000001
+      ],
+      "size": [
+        2.12,
+        0.2,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Checkout counter",
+      "position": [
+        10,
+        0.7,
+        11
+      ],
+      "size": [
+        2.4,
+        1.4,
+        3.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Checkout counter",
+      "position": [
+        14,
+        0.7,
+        11
+      ],
+      "size": [
+        2.4,
+        1.4,
+        3.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Checkout counter",
+      "position": [
+        18,
+        0.7,
+        11
+      ],
+      "size": [
+        2.4,
+        1.4,
+        3.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Cart bay",
+      "position": [
+        -15,
+        0.7,
+        14.8
+      ],
+      "size": [
+        6,
+        1.4,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Entrance pier",
+      "position": [
+        -19,
+        4.7,
+        22
+      ],
+      "size": [
+        10,
+        9.4,
+        1.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Entrance pier",
+      "position": [
+        19,
+        4.7,
+        22
+      ],
+      "size": [
+        10,
+        9.4,
+        1.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Entrance side glazing",
+      "position": [
+        -10,
+        3.6,
+        22
+      ],
+      "size": [
+        7,
+        6.8,
+        0.15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Entrance side glazing",
+      "position": [
+        10,
+        3.6,
+        22
+      ],
+      "size": [
+        7,
+        6.8,
+        0.15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Exterior walkway",
+      "position": [
+        0,
+        -0.14,
+        27
+      ],
+      "size": [
+        49,
+        0.25,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "spawn": {
+    "position": [
+      0,
+      0.12,
+      19
+    ],
+    "yaw": 180
+  },
+  "viewpoints": [
+    {
+      "name": "Grand entrance",
+      "description": "Your first look at Sipo",
+      "position": [
+        0,
+        0.12,
+        19
+      ],
+      "yaw": 180,
+      "pitch": -12
+    },
+    {
+      "name": "Fresh garden",
+      "description": "Produce picked for a brighter day",
+      "position": [
+        -8,
+        0.12,
+        5
+      ],
+      "yaw": 225,
+      "pitch": -5
+    },
+    {
+      "name": "Atrium",
+      "description": "A little universe of everyday joy",
+      "position": [
+        0,
+        0.12,
+        6
+      ],
+      "yaw": 180,
+      "pitch": -20
+    },
+    {
+      "name": "Mezzanine",
+      "description": "The best view in the house",
+      "position": [
+        -16,
+        5.92,
+        4
+      ],
+      "yaw": 110,
+      "pitch": 13
+    },
+    {
+      "name": "Bakery",
+      "description": "Something lovely, fresh from the oven",
+      "position": [
+        -17,
+        0.12,
+        -6.5
+      ],
+      "yaw": 180,
+      "pitch": 0
+    }
+  ],
+  "departments": [
+    {
+      "name": "Bakery",
+      "position": [
+        -18,
+        0,
+        -16.4
+      ],
+      "size": [
+        7.9,
+        4,
+        5
+      ],
+      "color": [
+        1.0,
+        0.47058823704719543,
+        0.0470588244497776
+      ]
+    },
+    {
+      "name": "Snacks",
+      "position": [
+        -9,
+        0,
+        -16.4
+      ],
+      "size": [
+        7.9,
+        4,
+        5
+      ],
+      "color": [
+        0.8509804010391235,
+        0.12941177189350128,
+        0.43921568989753723
+      ]
+    },
+    {
+      "name": "Frozen",
+      "position": [
+        0,
+        0,
+        -16.4
+      ],
+      "size": [
+        7.9,
+        4,
+        5
+      ],
+      "color": [
+        0.09019608050584793,
+        0.4274509847164154,
+        0.8666666746139526
+      ]
+    },
+    {
+      "name": "Drinks",
+      "position": [
+        9,
+        0,
+        -16.4
+      ],
+      "size": [
+        7.9,
+        4,
+        5
+      ],
+      "color": [
+        1.0,
+        0.47058823704719543,
+        0.0470588244497776
+      ]
+    },
+    {
+      "name": "Health & Beauty",
+      "position": [
+        18,
+        0,
+        -16.4
+      ],
+      "size": [
+        7.9,
+        4,
+        5
+      ],
+      "color": [
+        0.8509804010391235,
+        0.12941177189350128,
+        0.43921568989753723
+      ]
+    },
+    {
+      "name": "Home & Living",
+      "position": [
+        -18,
+        5.8,
+        -18.5
+      ],
+      "size": [
+        7.9,
+        4,
+        5
+      ],
+      "color": [
+        0.10196078568696976,
+        0.6509804129600525,
+        0.6784313917160034
+      ]
+    },
+    {
+      "name": "Little Wonders",
+      "position": [
+        -9,
+        5.8,
+        -18.5
+      ],
+      "size": [
+        7.9,
+        4,
+        5
+      ],
+      "color": [
+        0.48235294222831726,
+        0.3294117748737335,
+        0.7803921699523926
+      ]
+    },
+    {
+      "name": "Everyday Joy",
+      "position": [
+        0,
+        5.8,
+        -18.5
+      ],
+      "size": [
+        7.9,
+        4,
+        5
+      ],
+      "color": [
+        1.0,
+        0.47058823704719543,
+        0.0470588244497776
+      ]
+    },
+    {
+      "name": "Toys",
+      "position": [
+        9,
+        5.8,
+        -18.5
+      ],
+      "size": [
+        7.9,
+        4,
+        5
+      ],
+      "color": [
+        1.0,
+        0.47058823704719543,
+        0.0470588244497776
+      ]
+    },
+    {
+      "name": "The Green Room",
+      "position": [
+        18,
+        5.8,
+        -18.5
+      ],
+      "size": [
+        7.9,
+        4,
+        5
+      ],
+      "color": [
+        0.09803921729326248,
+        0.5058823823928833,
+        0.3176470696926117
+      ]
+    }
+  ],
+  "statistics": {
+    "staticMeshes": 166,
+    "triangles": 965583,
+    "reusedAssetTypes": 23,
+    "lightCount": 29,
+    "colliderCount": 116
+  }
+}
