@@ -11,6 +11,7 @@
 - Checked the initial spawn and all five scenic viewpoints for floor support and clearance from authored collision boxes. Corrected the bakery viewpoint that initially intersected a stocked shelf.
 - Verified the Open Image Denoise 2.5.1 archive against the SHA-256 published on its official RenderKit GitHub release: `743c3e2aff8c220d5d70fe6cb970fb3d36f2702d2693c61d1d148e404cf37cd6`.
 - Rendered and visually inspected the grand atrium (1600 × 1000), mezzanine (1280 × 800) and entrance (1280 × 800). All three use actual scene geometry, Cycles, 24 samples and an HDR denoising pass. Corrected the entrance glazing to use transmission in the source and transparent materials in Unity; C# compilation and FBX readback passed again after that change.
+- Follow-up preview verification: the mezzanine PNG fully decodes, is fully opaque, and its GitHub HTTP 200 response matches the local SHA-256. The only missing authored view was `02-fresh-garden.png`; it was rendered from the existing `.blend` without rebuilding geometry. All four previews now fully decode as nonblank PNGs. Their dimensions, sizes and hashes are recorded in `Docs/Previews/manifest.json`. The existing `.blend` opened successfully and the FBX readback passed again. No environment or gameplay source was changed for this verification.
 
 ## Unity activation blocker
 

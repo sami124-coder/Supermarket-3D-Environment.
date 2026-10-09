@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "sourceScene": "ArtSource/SipoSupermarket.blend",
+  "sourceSceneSha256": "355a2ed7bee3dc1d87f6fd72782da98b8e94a607985d7087efff37739c232f39",
+  "renderer": "Blender Cycles with HDR Open Image Denoise; not Unity captures",
+  "images": [
+    {
+      "file": "01-grand-atrium.png",
+      "format": "PNG",
+      "width": 1600,
+      "height": 1000,
+      "mode": "RGBA",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "bytes": 2465350,
+      "sha256": "42d3f3da4304405709bdefec8db880e039e02a25ed749eda82000fb44a95656b",
+      "fullyDecoded": true
+    },
+    {
+      "file": "02-fresh-garden.png",
+      "format": "PNG",
+      "width": 1280,
+      "height": 800,
+      "mode": "RGBA",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "bytes": 1682503,
+      "sha256": "9eeab301bc2044e2b3372d44e263198975848e1a8b89fa1940a4064e781f16f3",
+      "fullyDecoded": true
+    },
+    {
+      "file": "03-mezzanine.png",
+      "format": "PNG",
+      "width": 1280,
+      "height": 800,
+      "mode": "RGBA",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "bytes": 1802588,
+      "sha256": "0acde709efeee295fe753057c386ebc21533abc30931a485db96fadd629172ae",
+      "fullyDecoded": true
+    },
+    {
+      "file": "04-grand-entrance.png",
+      "format": "PNG",
+      "width": 1280,
+      "height": 800,
+      "mode": "RGBA",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "bytes": 1403352,
+      "sha256": "a0bc671bb45320db48fbccc5110eb70dfc8bc36fbdd335d760acfa6b573cc413",
+      "fullyDecoded": true
+    }
+  ]
+}

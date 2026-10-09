@@ -4,7 +4,9 @@ A colorful, two-level supermarket built around a glowing celestial atrium. The e
 
 ![Grand atrium — Blender Cycles preview](Docs/Previews/01-grand-atrium.png)
 
-**More views:** [Mezzanine and escalators](Docs/Previews/03-mezzanine.png) · [Grand entrance](Docs/Previews/04-grand-entrance.png)
+**More views:** [Fresh garden](Docs/Previews/02-fresh-garden.png) · [Mezzanine and escalators](Docs/Previews/03-mezzanine.png) · [Grand entrance](Docs/Previews/04-grand-entrance.png)
+
+If an embedded preview displays **"No image"**, use the [direct PNG links and complete 3D preview guide](Docs/PREVIEW_GUIDE.md). The guide also distinguishes the existing `.blend`/FBX assets from the Unity scene that still needs licensed assembly.
 
 ## Open in Unity
 
