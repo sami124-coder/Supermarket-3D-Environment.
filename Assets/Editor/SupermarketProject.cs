@@ -12,7 +12,14 @@ using UnityEngine.SceneManagement;
 
 namespace Sipo.Editor
 {
-    [Serializable] public class MaterialSpec { public string name; public float[] color, emission; public float roughness, metallic, emissionStrength, alpha; public bool transparent; }
+    [Serializable] public class MaterialSpec
+    {
+        public string name, baseMap, normalMap, metallicGlossMap;
+        public float[] color, emission, textureScale;
+        public float roughness, metallic, emissionStrength, alpha, normalScale=1;
+        public bool transparent;
+    }
+    [Serializable] public class BoundsSpec { public float[] center, size; }
     [Serializable] public class LightSpec { public string name, type; public float[] position, rotation, color; public float intensity, range, spotAngle; }
     [Serializable] public class BoxSpec { public string name; public float[] position, size, rotation; }
     [Serializable] public class ViewSpec { public string name, description; public float[] position; public float yaw, pitch; }
@@ -26,6 +33,8 @@ namespace Sipo.Editor
         public ViewSpec spawn;
         public ViewSpec[] viewpoints;
         public DepartmentSpec[] departments;
+        public BoundsSpec environmentBounds;
+        public string[] modelParts;
     }
 
     /// <summary>Assembles the authored FBX, physical boundaries, lighting and player into an editable scene.</summary>
@@ -71,25 +80,25 @@ namespace Sipo.Editor
                 if (spec == null || spec.schemaVersion != 1 || spec.materials == null || spec.colliders == null)
                     throw new InvalidDataException("Unsupported or incomplete supermarket scene data.");
                 ConfigurePipeline();
-                var importer=AssetImporter.GetAtPath(ModelPath) as ModelImporter;
-                if (importer == null) throw new FileNotFoundException("Import the supermarket FBX before building.");
-                importer.globalScale=1;
-                importer.useFileScale=true;
-                importer.bakeAxisConversion=true;
-                importer.importCameras=false;
-                importer.importLights=false;
-                importer.importAnimation=false;
-                importer.addCollider=false;
-                importer.isReadable=false;
-                importer.materialImportMode=ModelImporterMaterialImportMode.ImportStandard;
-                importer.SaveAndReimport();
-                var source=AssetDatabase.LoadAssetAtPath<GameObject>(ModelPath);
-                if (source == null) throw new InvalidDataException("The environment model did not import.");
                 var scene=EditorSceneManager.NewScene(NewSceneSetup.EmptyScene,NewSceneMode.Single);
                 var root=new GameObject("SIPO | A little joy in every aisle");
-                var model=(GameObject)PrefabUtility.InstantiatePrefab(source,root.transform);
-                model.name="Architecture, licensed groceries and botanical garden";
-                OrientModel(model.transform);
+                var model=Child("Complete premium retail environment",root.transform);
+                var parts=spec.modelParts!=null && spec.modelParts.Length>0 ? spec.modelParts : new[]{ModelPath};
+                foreach(var path in parts)
+                {
+                    var importer=AssetImporter.GetAtPath(path) as ModelImporter;
+                    if(importer==null)throw new FileNotFoundException("Import every authored FBX part before building: "+path);
+                    importer.globalScale=1;importer.useFileScale=true;importer.bakeAxisConversion=true;
+                    importer.importCameras=false;importer.importLights=false;importer.importAnimation=false;
+                    importer.addCollider=false;importer.isReadable=false;
+                    importer.materialImportMode=ModelImporterMaterialImportMode.ImportStandard;
+                    importer.SaveAndReimport();
+                    var source=AssetDatabase.LoadAssetAtPath<GameObject>(path);
+                    if(source==null)throw new InvalidDataException("Environment part did not import: "+path);
+                    var instance=(GameObject)PrefabUtility.InstantiatePrefab(source,model.transform);
+                    instance.name=Path.GetFileNameWithoutExtension(path);
+                    OrientModel(instance.transform);
+                }
                 var mats=new Dictionary<string,Material>(StringComparer.Ordinal);
                 var shader=Shader.Find("Universal Render Pipeline/Lit");
                 if (shader == null) throw new InvalidOperationException("Universal Render Pipeline/Lit shader is unavailable.");
@@ -110,7 +119,7 @@ namespace Sipo.Editor
                     material.renderQueue=m.transparent?(int)RenderQueue.Transparent:(int)RenderQueue.Geometry;
                     material.SetShaderPassEnabled("ShadowCaster",!m.transparent);
                     material.SetFloat("_Metallic",m.metallic);
-                    material.SetFloat("_Smoothness",1-m.roughness);
+                    ApplySurfaceMaps(material,m);
                     material.SetColor("_EmissionColor",C(m.emission)*m.emissionStrength);
                     if (m.emissionStrength>0) material.EnableKeyword("_EMISSION"); else material.DisableKeyword("_EMISSION");
                     material.globalIlluminationFlags=MaterialGlobalIlluminationFlags.BakedEmissive;
@@ -141,26 +150,24 @@ namespace Sipo.Editor
                     l.shadowBias=.035f;l.shadowNormalBias=.2f;
                 }
                 RenderSettings.ambientMode=AmbientMode.Trilight;
-                RenderSettings.ambientSkyColor=new Color(.42f,.49f,.64f);
-                RenderSettings.ambientEquatorColor=new Color(.38f,.32f,.24f);
-                RenderSettings.ambientGroundColor=new Color(.15f,.19f,.28f);
+                RenderSettings.ambientSkyColor=new Color(.30f,.37f,.51f);
+                RenderSettings.ambientEquatorColor=new Color(.25f,.22f,.18f);
+                RenderSettings.ambientGroundColor=new Color(.09f,.12f,.18f);
                 RenderSettings.ambientIntensity=1;
                 RenderSettings.fog=false;
-                RenderSettings.reflectionIntensity=.85f;
+                RenderSettings.reflectionIntensity=1;
                 var sun=Child("Soft exterior fill",lighting.transform).AddComponent<Light>();
-                sun.type=LightType.Directional;sun.color=new Color(1,.86f,.69f);sun.intensity=.65f;
+                sun.type=LightType.Directional;sun.color=new Color(1,.86f,.69f);sun.intensity=.45f;
                 sun.transform.rotation=Quaternion.Euler(65,-35,0);sun.shadows=LightShadows.Soft;RenderSettings.sun=sun;
-                var probe=Child("Atrium reflections",lighting.transform).AddComponent<ReflectionProbe>();
-                probe.transform.position=new Vector3(0,4,0);probe.size=new Vector3(49,15,45);
-                probe.mode=ReflectionProbeMode.Realtime;probe.refreshMode=ReflectionProbeRefreshMode.OnAwake;
-                probe.timeSlicingMode=ReflectionProbeTimeSlicingMode.IndividualFaces;probe.resolution=128;probe.boxProjection=true;
-                probe.hdr=true;probe.farClipPlane=70;
+                ConfigureReflections(lighting.transform,spec.environmentBounds);
                 ConfigureVolume(lighting.transform);
                 var player=SupermarketPlayerFactory.Create(root.transform,V(spec.spawn.position),spec.spawn.yaw);
                 var camera=player.GetComponentInChildren<Camera>();
                 camera.clearFlags=CameraClearFlags.SolidColor;camera.backgroundColor=new Color(.09f,.15f,.25f);
                 var additional=camera.GetUniversalAdditionalCameraData();additional.renderPostProcessing=true;
                 additional.antialiasing=AntialiasingMode.SubpixelMorphologicalAntiAliasing;
+                additional.antialiasingQuality=AntialiasingQuality.High;
+                camera.allowHDR=true;
                 player.GetComponent<SipoExplorer>().Configure(camera.transform,V(spec.spawn.position),spec.spawn.yaw,
                     spec.viewpoints.Select(v=>new SipoViewpoint {label=v.name,description=v.description,position=V(v.position),yaw=v.yaw,pitch=v.pitch}).ToArray(),
                     spec.departments.Select(d=>new SipoDepartmentZone {label=d.name,description="Discover something lovely.",bounds=new Bounds(V(d.position)+Vector3.up*2,V(d.size))}).ToArray());
@@ -197,6 +204,85 @@ namespace Sipo.Editor
                 model.localScale=Vector3.Scale(model.localScale,new Vector3(-1,1,1));
             model.position-=origin.position;
         }
+        static Texture2D SurfaceTexture(string path,bool normal=false,bool color=false)
+        {
+            if(string.IsNullOrWhiteSpace(path))return null;
+            var importer=AssetImporter.GetAtPath(path) as TextureImporter;
+            if(importer==null)throw new InvalidDataException("Missing authored surface texture: "+path);
+            var type=normal?TextureImporterType.NormalMap:TextureImporterType.Default;
+            // Packed smoothness lives in alpha. It must never be treated as
+            // transparency or gamma-corrected during texture import.
+            bool changed=importer.textureType!=type || importer.sRGBTexture!=color ||
+                importer.alphaIsTransparency || !importer.mipmapEnabled ||
+                importer.wrapMode!=TextureWrapMode.Repeat || importer.anisoLevel!=8 ||
+                importer.textureCompression!=TextureImporterCompression.Uncompressed;
+            if(changed)
+            {
+                importer.textureType=type;importer.sRGBTexture=color;
+                importer.alphaSource=TextureImporterAlphaSource.FromInput;
+                importer.alphaIsTransparency=false;importer.mipmapEnabled=true;
+                importer.wrapMode=TextureWrapMode.Repeat;importer.anisoLevel=8;
+                importer.textureCompression=TextureImporterCompression.Uncompressed;
+                importer.SaveAndReimport();
+            }
+            var texture=AssetDatabase.LoadAssetAtPath<Texture2D>(path);
+            if(texture==null)throw new InvalidDataException("Surface texture did not import: "+path);
+            return texture;
+        }
+        static void ApplySurfaceMaps(Material material,MaterialSpec spec)
+        {
+            var color=SurfaceTexture(spec.baseMap,color:true);
+            var normal=SurfaceTexture(spec.normalMap,normal:true);
+            var packed=SurfaceTexture(spec.metallicGlossMap);
+            material.SetTexture("_BaseMap",color);
+            material.SetTexture("_BumpMap",normal);
+            material.SetTexture("_MetallicGlossMap",packed);
+            material.SetFloat("_BumpScale",spec.normalScale);
+            // URP multiplies the packed map's alpha by _Smoothness.
+            material.SetFloat("_Smoothness",packed!=null?1:1-spec.roughness);
+            material.SetFloat("_SmoothnessTextureChannel",0);
+            material.SetFloat("_SpecularHighlights",1);
+            material.SetFloat("_EnvironmentReflections",1);
+            material.DisableKeyword("_SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A");
+            if(normal!=null)material.EnableKeyword("_NORMALMAP");else material.DisableKeyword("_NORMALMAP");
+            if(packed!=null)material.EnableKeyword("_METALLICSPECGLOSSMAP");else material.DisableKeyword("_METALLICSPECGLOSSMAP");
+            var scale=spec.textureScale!=null && spec.textureScale.Length==2
+                ?new Vector2(spec.textureScale[0],spec.textureScale[1]):Vector2.one;
+            foreach(string property in new[]{"_BaseMap","_BumpMap","_MetallicGlossMap"})
+            { material.SetTextureScale(property,scale);material.SetTextureOffset(property,Vector2.zero); }
+        }
+        static void ConfigureReflections(Transform parent,BoundsSpec spec)
+        {
+            var size=spec!=null?V(spec.size):new Vector3(49,15,58);
+            var center=spec!=null?V(spec.center):new Vector3(0,7.5f,5);
+            if(size.x<=0 || size.y<=0 || size.z<=0)throw new InvalidDataException("Invalid environment reflection bounds.");
+            AddReflection("Whole market HDR reflection",parent,
+                new Vector3(center.x,3.8f,center.z),new Bounds(center,size),512,0);
+            // Local, overlapping volumes keep the two galleries and front/rear
+            // product displays represented in the glossy floor and metalwork.
+            foreach(int side in new[]{-1,1})
+            {
+                var position=new Vector3(center.x+side*size.x*.36f,size.y*.48f,center.z);
+                AddReflection(side<0?"West mezzanine reflection":"East mezzanine reflection",parent,
+                    position,new Bounds(position,new Vector3(size.x*.30f,size.y*.52f,size.z*.82f)),256,2);
+                position=new Vector3(center.x,3.2f,center.z+side*size.z*.22f);
+                AddReflection(side<0?"Rear department reflection":"Arrival court reflection",parent,
+                    position,new Bounds(new Vector3(position.x,size.y*.36f,position.z),
+                        new Vector3(size.x*.80f,size.y*.72f,size.z*.58f)),256,1);
+            }
+        }
+        static void AddReflection(string name,Transform parent,Vector3 position,Bounds bounds,int resolution,int importance)
+        {
+            var probe=Child(name,parent).AddComponent<ReflectionProbe>();
+            probe.transform.position=position;probe.center=bounds.center-position;probe.size=bounds.size;
+            probe.mode=ReflectionProbeMode.Realtime;probe.refreshMode=ReflectionProbeRefreshMode.OnAwake;
+            probe.timeSlicingMode=ReflectionProbeTimeSlicingMode.IndividualFaces;
+            probe.resolution=resolution;probe.boxProjection=true;probe.hdr=true;
+            probe.importance=importance;probe.blendDistance=4;
+            probe.nearClipPlane=.15f;probe.farClipPlane=Mathf.Max(bounds.size.x,bounds.size.z)*1.5f;
+            probe.clearFlags=ReflectionProbeClearFlags.SolidColor;
+            probe.backgroundColor=new Color(.025f,.05f,.12f);
+        }
         static void ConfigurePipeline()
         {
             const string rp="Assets/Settings/SipoURP.asset",rd="Assets/Settings/SipoRenderer.asset";
@@ -205,9 +291,12 @@ namespace Sipo.Editor
             renderer.renderingMode=RenderingMode.ForwardPlus;
             var pipeline=AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>(rp);
             if (pipeline==null) { pipeline=UniversalRenderPipelineAsset.Create(renderer);AssetDatabase.CreateAsset(pipeline,rp); }
-            pipeline.supportsHDR=true;pipeline.msaaSampleCount=4;pipeline.renderScale=1;pipeline.shadowDistance=45;
+            pipeline.supportsHDR=true;pipeline.msaaSampleCount=4;pipeline.renderScale=1;pipeline.shadowDistance=75;
+            pipeline.mainLightShadowmapResolution=4096;pipeline.additionalLightsShadowmapResolution=4096;
             pipeline.maxAdditionalLightsCount=8;
             var serialized=new SerializedObject(pipeline);
+            serialized.FindProperty("m_ReflectionProbeBlending").boolValue=true;
+            serialized.FindProperty("m_ReflectionProbeBoxProjection").boolValue=true;
             serialized.FindProperty("m_AdditionalLightsRenderingMode").intValue=(int)LightRenderingMode.PerPixel;
             serialized.FindProperty("m_AdditionalLightShadowsSupported").boolValue=true;
             serialized.ApplyModifiedPropertiesWithoutUndo();
@@ -221,14 +310,20 @@ namespace Sipo.Editor
             if (profile==null)
             {
                 profile=ScriptableObject.CreateInstance<VolumeProfile>();AssetDatabase.CreateAsset(profile,path);
-                var bloom=profile.Add<Bloom>(true);bloom.intensity.Override(.42f);bloom.threshold.Override(1.1f);bloom.scatter.Override(.65f);
-                var tone=profile.Add<Tonemapping>(true);tone.mode.Override(TonemappingMode.ACES);
-                var color=profile.Add<ColorAdjustments>(true);color.postExposure.Override(.65f);color.saturation.Override(8);
-                var vignette=profile.Add<Vignette>(true);vignette.intensity.Override(.13f);vignette.smoothness.Override(.5f);
-                foreach(var component in profile.components)AssetDatabase.AddObjectToAsset(component,profile);
-                EditorUtility.SetDirty(profile);
             }
+            // Rebuilding updates existing profiles as well as first imports.
+            var bloom=VolumeEffect<Bloom>(profile);bloom.intensity.Override(.32f);bloom.threshold.Override(1.05f);bloom.scatter.Override(.68f);
+            var tone=VolumeEffect<Tonemapping>(profile);tone.mode.Override(TonemappingMode.ACES);
+            var color=VolumeEffect<ColorAdjustments>(profile);color.postExposure.Override(.15f);color.contrast.Override(14);color.saturation.Override(6);
+            var vignette=VolumeEffect<Vignette>(profile);vignette.intensity.Override(.10f);vignette.smoothness.Override(.55f);
+            foreach(var component in profile.components)EditorUtility.SetDirty(component);
+            EditorUtility.SetDirty(profile);
             var volume=Child("Sipo color and bloom",parent).AddComponent<Volume>();volume.isGlobal=true;volume.sharedProfile=profile;
+        }
+        static T VolumeEffect<T>(VolumeProfile profile) where T:VolumeComponent
+        {
+            if(profile.TryGet<T>(out var effect))return effect;
+            effect=profile.Add<T>(true);AssetDatabase.AddObjectToAsset(effect,profile);return effect;
         }
         [MenuItem("Sipo/Validate active supermarket scene")]
         public static void ValidateScene()

@@ -383,11 +383,11 @@ text('FRESHLY BAKED',(-17,8.77,.8),.35,M['White'])
 # Twin escalators with visible comb plates, treads, and continuous balustrades.
 GROUP='Escalators'
 for x in (10,12.55):
-    for i in range(29):
-        h=(i+1)*5.8/29;y=3.65+i*.40
-        cube('Escalator step',(x,y,h-.1),(2.12,.42,.2),M['Chrome'],.012)
-        cube('Escalator yellow nosing',(x,y-.19,h+.003),(2.08,.026,.014),M['Yellow'])
-        coll('Escalator tread',(x,y,h-.1),(2.12,.42,.2))
+    for i in range(36):
+        h=(i+1)*5.8/36;y=3.65+i*(11.6/36)
+        cube('Escalator step',(x,y,h-.1),(2.12,11.6/36+.015,.2),M['Chrome'],.012)
+        cube('Escalator yellow nosing',(x,y-(11.6/36)/2,h+.003),(2.08,.026,.014),M['Yellow'])
+        coll('Escalator tread',(x,y,h-.1),(2.12,11.6/36+.015,.2))
         for dx in (-.66,-.22,.22,.66):cube('Tread grooves',(x+dx,y,h+.009),(.01,.35,.012),M['Black'])
     for dx in (-1.15,1.15):
         a=(x+dx,3.4,.48);b=(x+dx,15.1,6.26)
@@ -478,6 +478,9 @@ for x in (-18,18):light('Gallery warm wash',(x,5,11.4),'FFE0B0',1800,8,unity_int
 
 # Apply the major environment-art revision to the existing layout.
 exec(compile((ROOT/'Tools/redesign_art.py').read_text(), str(ROOT/'Tools/redesign_art.py'), 'exec'))
+for art_module in ['premium_atrium.py','premium_mascot.py','premium_merchandise.py','premium_mezzanine.py','premium_botanical.py','expand_retail_hall.py']:
+    exec(compile((ROOT/'Tools'/art_module).read_text(),str(ROOT/'Tools'/art_module),'exec'))
+
 
 # Bake static meshes into material-aware spatial groups for a manageable Unity hierarchy.
 # Linked copies of the CC0 source meshes are consolidated; originals stay in ThirdParty.
@@ -518,6 +521,7 @@ del depsgraph
 bpy.data.batch_remove(ids=original_objects)
 bpy.context.view_layer.update()
 print('Geometry consolidated into',len(groups),'spatial batches',flush=True)
+exec(compile((ROOT/'Tools/premium_surface_maps.py').read_text(),str(ROOT/'Tools/premium_surface_maps.py'),'exec'))
 for name,loc in [('Origin',(0,0,0)),('Right',(1,0,0)),('Back',(0,-1,0)),('Up',(0,0,1))]:
     o=bpy.data.objects.new('Anchor_'+name,None);bpy.context.collection.objects.link(o);o.location=loc
 # Record imported solid-color materials too, avoiding any unlicensed external textures.
@@ -531,13 +535,7 @@ for m in bpy.data.materials:
 DATA['statistics']={'staticMeshes':sum(o.type=='MESH' for o in scene.objects),
                     'triangles':sum(sum(len(p.vertices)-2 for p in o.data.polygons) for o in scene.objects if o.type=='MESH'),
                     'reusedAssetTypes':len(PROTOS),'lightCount':len(DATA['lights']),'colliderCount':len(DATA['colliders'])}
-(OUT/'scene-data.json').write_text(json.dumps(DATA,indent=2)+'\n')
-bpy.ops.object.select_all(action='DESELECT')
-for o in scene.objects:
-    if o.type in ('MESH','EMPTY'):o.select_set(True)
-bpy.ops.export_scene.fbx(filepath=str(OUT/'SipoSupermarket.fbx'),use_selection=True,object_types={'MESH','EMPTY'},
-                         axis_forward='-Z',axis_up='Y',apply_unit_scale=True,bake_space_transform=False,
-                         mesh_smooth_type='FACE',use_mesh_modifiers=True,add_leaf_bones=False,path_mode='AUTO')
+exec(compile((ROOT/'Tools/export_premium_environment.py').read_text(),str(ROOT/'Tools/export_premium_environment.py'),'exec'))
 
 world=bpy.data.worlds.new('Evening in Sipo');world.use_nodes=True
 world.node_tree.nodes['Background'].inputs[0].default_value=(.16,.21,.34,1)
@@ -557,20 +555,22 @@ def camera(name,loc,target,lens):
     d=bpy.data.cameras.new(name);d.lens=lens;d.clip_end=200
     o=bpy.data.objects.new(name,d);bpy.context.collection.objects.link(o);o.location=loc
     o.rotation_euler=(Vector(target)-o.location).to_track_quat('-Z','Y').to_euler();return o
-hero=camera('01 Grand atrium',(0,-20.4,3.5),(0,3.5,6.05),21)
-camera('02 Fresh garden',(-8,-8.5,1.7),(-10,1,3),21)
-camera('03 Mezzanine',(-17,-8,8.5),(1,3,4.9),23)
-camera('04 Grand entrance',(0,-38,5.5),(0,-15,6.7),25)
-camera('05 Bakery',(-17.5,3.8,1.7),(-18,11,2.7),20)
-camera('06 Snacks',(-6.5,.8,1.7),(-6.5,8.6,2.7),21)
-camera('07 Drinks',(7,-12,1.7),(7,-4.3,2.6),21)
-camera('08 Frozen',(1,3,1.7),(1,10,2.7),20)
-camera('09 Kitchen',(-19,-6.7,7.5),(-19,.3,7.6),22)
-camera('10 Gym',(19,-6.7,7.5),(19,.3,7.6),22)
-camera('11 Checkout',(13,-20,1.7),(15,-10,3),19)
-camera('12 First person',(0,-17.8,1.7),(0,1,5.2),19)
+hero=camera('01 Grand atrium',(0,-29.5,2.1),(0,7,7.2),19)
+camera('02 Fresh garden',(-11,-12.5,1.7),(-14.2,1.8,3.55),22)
+camera('03 Mezzanine',(-23.2,-13,9.1),(3,11,6.5),22)
+camera('04 Grand entrance',(0,-51,6.0),(0,-19,8),25)
+camera('05 Bakery',(-22.8,2.2,2.7),(-25.56,16,3.2),24)
+camera('06 Snacks',(-6.2,0,2.4),(-9.23,12.2,3.8),21)
+camera('07 Drinks',(10,-17.5,1.7),(9.94,-6.1,3.3),23)
+camera('08 Frozen',(1.42,3.0,1.7),(1.42,14.2,3.4),21)
+camera('09 Kitchen',(-27,-10.5,8.95),(-27,.5,9),24)
+camera('10 Gym',(27,-10.5,8.95),(27,.5,9),24)
+camera('11 Checkout',(18,-28.5,1.7),(23,-14,3.3),21)
+camera('12 First person',(0,-27,1.7),(0,8,6.8),19)
+camera('13 Flagship mascot',(-8.52,-12,10.3),(-8.52,-4.8,10.0),40)
 scene.camera=hero
 exec(compile((ROOT/'Tools/preview_hands.py').read_text(),str(ROOT/'Tools/preview_hands.py'),'exec'))
+exec(compile((ROOT/'Tools/link_merchandise_source.py').read_text(),str(ROOT/'Tools/link_merchandise_source.py'),'exec'))
 # Save .blend outside Assets, so Unity never tries to launch Blender as an importer.
 source=ROOT/'ArtSource';source.mkdir(exist_ok=True)
 bpy.ops.wm.save_as_mainfile(filepath=str(source/'SipoSupermarket.blend'),compress=True)

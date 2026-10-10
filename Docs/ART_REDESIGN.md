@@ -1,3 +1,7 @@
+# Historical art pass — 601e70c
+
+This document describes the earlier art revision. The current [grand retail hall upgrade](ART_UPGRADE.md) supersedes its counts and file layout.
+
 # Fantasy supermarket — visual redesign
 
 This art pass revises the existing supermarket. The building footprint, two floors, mezzanine circulation, escalators, asset provenance and Unity integration are retained. No gameplay or mechanics were added or changed.

@@ -1,75 +1,70 @@
-# Preview the existing supermarket
+# Preview the complete grand retail hall
 
-## Open the images directly
+## Current renders
 
-These links open the PNG bytes rather than an embedded chat preview. If a chat displays "No image", use the direct link or download the file from GitHub.
+Use the direct PNG links if an embedded chat image says “No image”. The [gallery](GALLERY.md) displays every current view together.
 
-| View | Direct PNG | Resolution |
-| --- | --- | --- |
-| Central atrium | [Open image](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/01-grand-atrium.png) | 1600 × 1000 |
-| Fresh produce | [Open image](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/02-fresh-garden.png) | 1280 × 800 |
-| Bakery | [Open image](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/05-bakery.png) | 1280 × 800 |
-| Snacks / candy | [Open image](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/06-snacks.png) | 1280 × 800 |
-| Drinks | [Open image](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/07-drinks.png) | 1280 × 800 |
-| Frozen | [Open image](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/08-frozen.png) | 1280 × 800 |
-| Kitchen | [Open image](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/09-kitchen.png) | 1280 × 800 |
-| Gym | [Open image](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/10-gym.png) | 1280 × 800 |
-| Checkout | [Open image](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/11-checkout.png) | 1280 × 800 |
-| First-person with static hands | [Open image](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/12-first-person.png) | 1280 × 800 |
-| Mezzanine overview | [Open image](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/03-mezzanine.png) | 1280 × 800 |
-| Grand entrance | [Open image](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/04-grand-entrance.png) | 1280 × 800 |
-
-`Docs/Previews/manifest.json` records the decoded format, dimensions, byte size and SHA-256 of every preview. These are conventional Blender renders of the supplied environment, not screenshots from Unity.
-
-## Inspect the complete 3D environment in Blender
-
-1. Download or clone [the repository](https://github.com/sami124-coder/Supermarket-3D-Environment.).
-2. Open **`ArtSource/SipoSupermarket.blend`** in Blender 4.3.2 or a compatible newer version.
-3. In the 3D Viewport, press **Home** to frame the environment. Orbit with the middle mouse button; pan with Shift + middle mouse; zoom with the wheel. This lets you inspect both floors, the entrance, stocked aisles, checkouts, carts and the suspended ceiling installation.
-4. Press **Numpad 0** for the saved atrium camera. The Outliner contains twelve numbered cameras, including every department and `12 First person`. Select a camera and use **View → Cameras → Set Active Object as Camera** to switch views.
-   For the hand pose, use the render helper with `--views=firstperson`; it unhides tagged hand objects only for that camera. Selecting the camera alone does not change render visibility.
-5. Use **Material Preview** for fast inspection of the colors. For the authored illumination, use **Rendered** viewport shading with scene lights/world, or render the camera with **F12**. Interactive rendering speed depends on your machine; the supplied PNGs are already finished.
-6. For a walkthrough without Unity or gameplay, use Blender's **View → Navigation → Walk Navigation**. Use WASD and the mouse to move and look around; Esc exits. Solid or Material Preview shading is faster for navigation than CPU-rendered shading.
-
-Opening or navigating this file does not rebuild the supermarket. Blender does not require Unity activation. Built-in Blender denoising is disabled for compatibility with this cloud image; the supplied final PNGs use the separate verified OIDN render helper.
-
-## Actual 3D files included
-
-| File | What it contains |
+| Requested view | Direct PNG |
 | --- | --- |
-| `ArtSource/SipoSupermarket.blend` | Complete editable scene, 194 environment mesh batches, 39 local lights, materials, twelve preview cameras and separate static hand objects. |
-| `Assets/Environment/SipoSupermarket.fbx` | Complete static environment geometry and materials, plus coordinate markers. 1,462,868 triangles. Imports natively in Unity. Cameras, light objects and physics are not embedded in this FBX. |
-| `Assets/Environment/FirstPersonHands.fbx` | Separate unrigged static sleeve/hand pose; optional art asset, not included in the environment FBX or Unity scene builder. |
-| `Assets/Environment/scene-data.json` | URP material properties, transparent glazing, 39 local-light definitions, 118 collision boxes and existing view/department definitions. It is data, not a standalone Unity scene. |
-| `Assets/ThirdParty/KenneyFoodKit/Models/*.fbx` | 36 separately reusable, converted CC0 food models; original GLB sources and license included. |
-| `Assets/ThirdParty/KenneyFurnitureKit/Models/*.fbx` | 17 separately reusable CC0 furniture, appliance and plant models; original sources and license included. |
+| Central atrium | [Open](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/01-grand-atrium.png) |
+| Bakery | [Open](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/05-bakery.png) |
+| Frozen | [Open](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/08-frozen.png) |
+| Drinks | [Open](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/07-drinks.png) |
+| Snacks | [Open](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/06-snacks.png) |
+| Fresh produce | [Open](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/02-fresh-garden.png) |
+| Mezzanine / upper level | [Open](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/03-mezzanine.png) |
+| First-person with static hands | [Open](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/12-first-person.png) |
+| Flagship mascot close-up | [Open](https://raw.githubusercontent.com/sami124-coder/Supermarket-3D-Environment./main/Docs/Previews/13-mascot-detail.png) |
 
-The `.blend` and full-environment FBX have both been opened successfully in Blender. An independent FBX readback confirms mesh count, coordinate markers, materials and metre-scale bounds. Third-party source hashes are recorded in each pack's manifest.
+These are Blender Cycles renders of the actual 3D scene. Atrium is 1600 × 1000; the remaining current images are 1280 × 800. `Docs/Previews/manifest.json` records full PNG decoding, dimensions, opacity/nonblank checks, individual hashes and both source-file hashes. Previous-pass images live in `Docs/Previews/Archive` with separate provenance.
 
-**Not yet created:** `Assets/Scenes/SipoSupermarket.unity` and the generated Unity `.mat`/URP settings assets. There is no completed Unity player build. The current machine's Unity activation blocker prevented those operations.
+## Inspect both floors in Blender
 
-## What is ready for Unity 6 URP
+1. Clone or download the complete repository. Keep **both** `ArtSource/SipoSupermarket.blend` and `ArtSource/SipoMerchandiseLibrary.blend` together. Also retain `Assets/Environment/Textures` at its repository path.
+2. Open `ArtSource/SipoSupermarket.blend` in Blender 4.3.2 or a compatible newer version. The merchandise library loads automatically using its relative path. The complete environment is visible without running generation scripts.
+3. Press **Home** to frame the scene. Orbit with the middle mouse, pan with Shift + middle mouse, and zoom with the wheel.
+4. Press **Numpad 0** for the atrium camera. Select another numbered camera in the Outliner and use **View → Cameras → Set Active Object as Camera**. Thirteen cameras include optional kitchen, gym, checkout and entrance views as well as the nine current rendered subjects.
+5. Use **Material Preview** for quick inspection or **Rendered** shading with scene lights/world for authored illumination.
+6. Use **View → Navigation → Walk Navigation** for a Blender walkthrough. WASD and the mouse move/look; Esc exits. This requires no gameplay implementation.
 
-The geometry, licensed reusable models, material/lighting/collision metadata and editor assembly code are present. The project pins **Unity 6000.3.26f1** and **URP 17.3.0**. The C# sources compile against that editor's assemblies, but Unity asset import, shader execution and scene appearance have not been validated in a licensed editor.
+The linked merchandise objects are editable in their library file. Open `SipoMerchandiseLibrary.blend` to edit them, then reload the main scene; for local edits instead, use Blender's supported Library Override workflow. The main scene's architecture, foliage and mascots remain directly editable.
 
-To inspect the existing project in Unity:
+The static hands are hidden from ordinary renders. `Tools/render_views.py --views=firstperson` unhides them for that camera. They are an optional unrigged art pose, not a camera controller or hand animation system.
 
-1. Activate Unity through your supported licensing route and open this repository in Unity Hub using the pinned editor version.
-2. Let scripts and assets import. The existing editor code assembles the supplied FBX and metadata into `Assets/Scenes/SipoSupermarket.unity` on first import. If automatic assembly is deferred, use **Sipo → Build supermarket scene**. This assembles the existing assets; it does not regenerate the model from scratch.
-3. Inspect the resulting environment in **Scene view**. No Play mode or gameplay is required to view it. The generated scene contains separate environment, lighting and collision roots; the pre-existing explorer can be disabled when using the scene solely as an environment.
+## Actual Unity-ready files
 
-For integration into another Unity 6 URP project, the FBX and individual licensed models can be imported directly as static assets. Remap their materials to **Universal Render Pipeline/Lit**, including transparent glazing. An FBX-only import does **not** recreate the authored lights, collision boxes, reflection probe or post-processing; apply the supplied metadata/editor workflow for those. The existing scene builder expects the repository's asset paths, so copying only the FBX does not activate that workflow.
+| File | Contents |
+| --- | --- |
+| `Assets/Environment/SipoSupermarket.fbx` | Architecture, original mascots, foliage, themed fixtures and upper-floor geometry. |
+| `Assets/Environment/SipoMerchandise.fbx` | Dense shelves, groceries, pastry/juice/candy/frozen merchandise. Both FBX files are required for the complete scene. |
+| `Assets/Environment/FirstPersonHands.fbx` | Separate static sleeve/hand illustration pose; not attached by the scene builder. |
+| `Assets/Environment/scene-data.json` | Both model-part paths, material/texture mappings, expanded bounds, lights, collision boxes, views and art counts. |
+| `Assets/Environment/Textures/*.png` | Original linear porcelain normal and packed metallic/smoothness maps with Unity import metadata. |
+| `Assets/ThirdParty/*/Models/*.fbx` | 53 separately reusable CC0 food/furniture models, with unchanged original sources and license records. |
 
-This visual redesign updates the existing art and metadata. No gameplay code was modified. See [the art comparison and remaining differences](ART_REDESIGN.md).
+The complete static environment totals approximately 8.01 million triangles. The two FBX parts and the two Blender files stay below GitHub's individual file limit.
 
-## Render the updated views without regenerating geometry
+## Assemble in Unity 6 URP
+
+1. Activate Unity **6000.3.26f1** through your supported licensing route and open this repository. It pins **URP 17.3.0**.
+2. Let assets/scripts import. On a fresh licensed import, the existing assembly code creates `Assets/Scenes/SipoSupermarket.unity`. For an already-imported project, use **Sipo → Build supermarket scene** to load the revised art and metadata. Save customized scenes under another name first: this command replaces the generated scene.
+3. Inspect the environment in **Scene view**. The builder imports and aligns both FBX parts, applies URP/Lit materials and texture maps, expanded reflection probes, local lights, post-processing and the authored collision boxes. No Play mode is required for an environment review.
+
+**Not yet created on this machine:** the populated `.unity` scene and generated `.mat`/URP settings assets. Unity activation is still unavailable, so native import, shader appearance, performance and a Unity walkthrough have not been tested. C# compilation, offline asset checks and independent FBX readback are recorded in [VALIDATION.md](VALIDATION.md).
+
+Copying only the first FBX into another project omits merchandise. Copy both parts and the textures; remap their materials to URP/Lit or use the supplied metadata/editor workflow. FBX-only import does not recreate the lights, reflections, post-processing or collision boxes.
+
+## Regenerate renders without regenerating geometry
 
 ```bash
+bash Tools/install_render_tools.sh
+blender -b ArtSource/SipoSupermarket.blend -t 5 --python-exit-code 1 \
+  --python Tools/render_views.py -- --views=hero --samples=32 --percentage=100
 blender -b ArtSource/SipoSupermarket.blend -t 5 --python-exit-code 1 \
   --python Tools/render_views.py -- \
-  --views=hero,produce,bakery,snacks,drinks,frozen,kitchen,gym,checkout,firstperson,gallery,entrance \
-  --samples=24 --percentage=80
+  --views=bakery,frozen,drinks,snacks,produce,gallery,firstperson,mascot \
+  --samples=32 --percentage=80
 python3 Tools/validate_previews.py
 ```
 
-Use `--views=hero --percentage=100` for the 1600 × 1000 atrium image. Rendering requires the installed OIDN helper described in the README; opening the saved scene does not.
+Opening and exploring the saved `.blend` does not require the denoiser. The helper requires the installed official OIDN executable and Python PNG validation requires Pillow.

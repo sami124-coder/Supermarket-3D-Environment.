@@ -14,6 +14,15 @@ assert data['statistics']['reusedAssetTypes']>=12
 assert data['statistics']['staticMeshes']>=30
 assert (root/'Assets/Environment/SipoSupermarket.fbx').stat().st_size>100000
 assert (root/'ArtSource/SipoSupermarket.blend').stat().st_size>100000
+for part in data.get('modelParts',['Assets/Environment/SipoSupermarket.fbx']):
+    assert (root/part).is_file() and 100000<(root/part).stat().st_size<99*1024*1024,part
+for m in data['materials']:
+    for key in ('normalMap','metallicGlossMap'):
+        if m.get(key):assert (root/m[key]).is_file() and Path(str(root/m[key])+'.meta').is_file(),m[key]
+for name,sha in data.get('surfaceTextures',{}).get('sha256',{}).items():
+    p=root/'Assets/Environment/Textures'/name
+    assert hashlib.sha256(p.read_bytes()).hexdigest()==sha,p
+assert (root/'ArtSource/SipoMerchandiseLibrary.blend').is_file()
 def contains_xz(p,c,margin=0):
     return all(abs(p[i]-c['position'][i])<c['size'][i]/2+margin for i in (0,2))
 for v in [data['spawn']]+data['viewpoints']:

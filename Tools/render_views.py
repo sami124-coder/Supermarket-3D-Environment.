@@ -16,7 +16,7 @@ VIEWS={'hero':('01 Grand atrium','01-grand-atrium'),
        'bakery':('05 Bakery','05-bakery'), 'snacks':('06 Snacks','06-snacks'),
        'drinks':('07 Drinks','07-drinks'), 'frozen':('08 Frozen','08-frozen'),
        'kitchen':('09 Kitchen','09-kitchen'), 'gym':('10 Gym','10-gym'),
-       'checkout':('11 Checkout','11-checkout'), 'firstperson':('12 First person','12-first-person')}
+       'checkout':('11 Checkout','11-checkout'), 'firstperson':('12 First person','12-first-person'), 'mascot':('13 Flagship mascot','13-mascot-detail')}
 
 def render_view(key,samples=32,percentage=100):
     name,slug=VIEWS[key];scene=bpy.context.scene

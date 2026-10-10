@@ -4,9 +4,9 @@ A colorful, two-level supermarket built around a glowing celestial atrium. The e
 
 ![Grand atrium — Blender Cycles preview](Docs/Previews/01-grand-atrium.png)
 
-**Major art redesign:** [Comparison, changes and remaining differences](Docs/ART_REDESIGN.md) · [All ten requested views](Docs/GALLERY.md)
+**Grand retail hall art upgrade:** [Changes and remaining differences](Docs/ART_UPGRADE.md) · [Eight requested views and mascot detail](Docs/GALLERY.md)
 
-**More views:** [Fresh garden](Docs/Previews/02-fresh-garden.png) · [Mezzanine and escalators](Docs/Previews/03-mezzanine.png) · [Grand entrance](Docs/Previews/04-grand-entrance.png)
+**More views:** [Fresh garden](Docs/Previews/02-fresh-garden.png) · [Mezzanine and escalators](Docs/Previews/03-mezzanine.png) · [Flagship mascot](Docs/Previews/13-mascot-detail.png)
 
 If an embedded preview displays **"No image"**, use the [direct PNG links and complete 3D preview guide](Docs/PREVIEW_GUIDE.md). The guide also distinguishes the existing `.blend`/FBX assets from the Unity scene that still needs licensed assembly.
 
@@ -17,7 +17,7 @@ If an embedded preview displays **"No image"**, use the [direct PNG links and co
 3. After scripts and assets import, the project assembles and opens `Assets/Scenes/SipoSupermarket.unity` automatically. If automatic assembly was deferred because another scene was dirty, use **Sipo → Build supermarket scene**.
 4. Inspect the complete environment in **Scene view**. No Play mode is needed. The generated scene, materials, render settings, lights and colliders are ordinary editable Unity assets.
 
-The first import creates the populated `.unity` scene from the included FBX and `scene-data.json`. The project does not require Blender to open in Unity. Rebuilding through the menu replaces the generated scene; save personal scene edits under a different name before doing so.
+The first import creates the populated `.unity` scene from the two included FBX parts and `scene-data.json`. The project does not require Blender to open in Unity. Rebuilding through the menu replaces the generated scene; save personal scene edits under a different name before doing so.
 
 **Current validation:** C# compilation, asset integrity checks, FBX export/readback and offline scene rendering are checked independently of Unity activation. Unity project import, Play mode and player builds still require a licensed editor; the cloud editor currently exits with code **198**, reporting no valid license. The preview images are **Blender Cycles renders of the supplied 3D source**, not Unity screenshots. See [validation details](Docs/VALIDATION.md).
 
@@ -39,17 +39,19 @@ The escalator treads are walkable stairs with handrail geometry. They are static
 
 ## Included environment
 
-- A 48 × 44 metre market, exterior entrance portal and welcome paving.
+- A 69.58 × 63.9 metre foundation and expanded market, exterior entrance portal and welcome paving.
 - Two levels with a central atrium, mezzanine galleries and twin escalator flights.
-- An orange illuminated oculus, star canopy, planets, clouds and an original orbit-bear mascots.
+- An orange illuminated oculus, star canopy, planets, clouds and five detailed original Orbit Club mascot sculptures.
 - Produce garden, bakery, snacks, frozen food, drinks, health and beauty, home, toys, a furnished upper-level kitchen and a colorful gym.
 - Stocked shelving, pastry displays, an information desk, three checkout lanes and seven nested carts.
 - Indoor trees, potted plants, trailing balcony greenery, glossy flowing cobalt/pearl/tangerine floor rings and brass inlays.
-- URP Forward+ lighting, bloom, ACES tonemapping, reflection probe and first-person exploration UI.
-- 36 retained CC0 grocery models, 27 types placed repeatedly in the scene, plus 17 retained CC0 furniture models, six now reused in the kitchen.
+- URP Forward+ lighting, bloom, ACES tonemapping, overlapping reflection probes and first-person exploration UI.
+- 36 retained CC0 grocery models, 32 types placed repeatedly in the scene, plus 17 retained CC0 furniture models, with appliances, tables and chairs reused in kitchen, cafés, lounges and boutiques.
 - Magenta lollipop sculptures, glazed doughnut arches, a rainbow drinks island, icy frozen motifs and a separate static first-person hand pose.
 
-The static environment is grouped into **194 spatial mesh batches**, **1,462,868 triangles**, with **39 local lights** and **118 collision volumes**. Individual reusable models are retained separately for editing. This is a desktop-oriented scene; mobile or VR deployment needs profiling and a separate optimization pass.
+The upper floor now has five deep boutiques with arches, awnings, window vignettes and furnished lounges. Merchandising adds 1,667 licensed groceries and 225 original packaged products. Foliage includes 10,739 shaped leaves. Original porcelain normal and packed metallic/smoothness maps are shared between Blender and URP.
+
+The static environment is grouped into **385 spatial mesh batches**, **8,010,217 triangles**, with **84 local lights** and **168 collision volumes**. Individual reusable models are retained separately for editing. This is a desktop-oriented scene; mobile or VR deployment needs profiling and a separate optimization pass.
 
 ## Reused assets and licenses
 
@@ -59,12 +61,12 @@ The scene reuses **Kenney Food Kit 1.2**, under **CC0**. Original source assets,
 
 | Path | Purpose |
 | --- | --- |
-| `Assets/Environment/SipoSupermarket.fbx` | Complete authored environment, imported natively by Unity |
+| `Assets/Environment/SipoSupermarket.fbx` + `SipoMerchandise.fbx` | Both native FBX parts form the complete static environment |
 | `Assets/Environment/scene-data.json` | Material, lighting, collider and viewpoint definitions |
 | `Assets/Editor/SupermarketProject.cs` | Scene assembly, URP setup, validation and Linux build menus |
 | `Assets/Scripts/Runtime/` | Explorer, map, interface and player factory |
 | `Assets/ThirdParty/` | Licensed, reusable source models and FBX conversions |
-| `ArtSource/SipoSupermarket.blend` | Editable Blender scene, including preview cameras and lighting |
+| `ArtSource/SipoSupermarket.blend` + `SipoMerchandiseLibrary.blend` | Complete editable scene and linked merchandise; keep both files together |
 | `Tools/build_supermarket.py`, `Tools/redesign_art.py` | Existing layout and major visual art pass using retained CC0 assets |
 | `Assets/Environment/FirstPersonHands.fbx` | Separate unrigged preview pose, without gameplay behavior |
 | `Docs/Previews/` | Offline render evidence |
@@ -91,10 +93,10 @@ python3 Tools/check_csharp.py --editor /workspace/tools/unity/6000.3.26f1/Editor
 
 # Render other authored views without rebuilding geometry.
 blender -b ArtSource/SipoSupermarket.blend -t 5 --python-exit-code 1 \
-  --python Tools/render_views.py -- --views=produce,bakery,snacks,drinks,frozen,kitchen,gym,checkout,firstperson,gallery,entrance --samples=24 --percentage=80
+  --python Tools/render_views.py -- --views=produce,bakery,snacks,drinks,frozen,firstperson,gallery,mascot --samples=32 --percentage=80
 ```
 
-The source generator overwrites only its documented generated model, metadata, `.blend` and preview outputs. Exported lettering is mesh geometry and needs no installed fonts at runtime.
+The source generator overwrites its documented generated FBX parts, metadata, Blender scene/library and original surface maps. Exported lettering is mesh geometry and needs no installed fonts at runtime.
 
 The preview pipeline uses Cycles, linear HDR buffers, Open Image Denoise 2.5.1 and AgX color management. The denoiser is obtained from the official RenderKit release and checked against its published SHA-256. It is a render-processing tool outside the Unity project; Unity has no dependency on it.
 

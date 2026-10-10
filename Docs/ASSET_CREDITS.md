@@ -16,3 +16,5 @@ Architecture, original orbit-bear mascots, static first-person hands, candy scul
 Signage uses outlines from **DejaVu Sans Condensed Bold** and **DejaVu Sans Bold Oblique**, converted to mesh geometry. The font's redistribution notice is retained in `Docs/Licenses/DejaVu.txt`. Source regeneration expects the DejaVu fonts installed at their standard Debian paths; the exported model has no font dependency.
 
 Unity and the Universal Render Pipeline retain their own licenses. The editor installation is outside this repository and is not redistributed with the project.
+
+The grand retail hall pass also instances retained tableRound, chairRounded and other furniture into upper boutiques and lounges. Its 1024px porcelain data maps are original procedural project textures. Label graphics, detailed Orbit Club mascot sculptures, shaped leaf meshes, awnings, windows and café/gym dressings are original project geometry. The retained CC0 distribution files and original notices remain unchanged.

@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: d7f07fd22e1c57f8a88f046b38362430
+TextureImporter:
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    enableMipMap: 1
+    sRGBTexture: 0
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 8
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  textureType: 1
+  textureShape: 1
+  alphaSource: 1
+  alphaIsTransparency: 0
+  maxTextureSize: 1024
+  userData: Original Sipo porcelain surface data; linear color space
+  assetBundleName:
+  assetBundleVariant:
