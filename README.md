@@ -12,6 +12,8 @@ If an embedded preview displays **"No image"**, use the [direct PNG links and co
 
 ## Open in Unity
 
+**Existing project showing pink/magenta materials?** Use the [material repair and safe regeneration guide](Docs/MATERIAL_REPAIR.md). The fix remaps both FBXs to your existing URP materials and adds strict importer/renderer validation.
+
 1. Install **Unity 6000.3.26f1 LTS** in Unity Hub and activate your eligible Unity license.
 2. Add this repository folder as a project, then open it. URP **17.3.0** is bundled with this editor.
 3. After scripts and assets import, the project assembles and opens `Assets/Scenes/SipoSupermarket.unity` automatically. If automatic assembly was deferred because another scene was dirty, use **Sipo → Build supermarket scene**.

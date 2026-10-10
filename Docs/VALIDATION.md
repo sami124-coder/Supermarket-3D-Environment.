@@ -1,5 +1,7 @@
 # Validation record — grand retail hall art pass
 
+For the later FBX material-name correction, see [material mapping validation and local repair steps](MATERIAL_REPAIR.md). Its offline regression covers all 2,176 material slots in both FBXs; native Unity import remains subject to the activation limitation below.
+
 ## Passed
 
 - All 53 retained CC0 source-model hashes, license notices and standalone model conversions pass integrity checks. Original third-party sources are unchanged.

@@ -1,0 +1,24 @@
+{
+  "result": "passed",
+  "assertions": 13284,
+  "renderers": 385,
+  "slots": 2176,
+  "sourceNames": 215,
+  "modelParts": 2,
+  "unityImportExecuted": false,
+  "editorSourceSha256": "0d178c98a06a8b2696235f0162851ea2fdf58369f517cd4f58f2d3f0ee86dece",
+  "parts": [
+    {
+      "file": "Assets/Environment/SipoSupermarket.fbx",
+      "sha256": "c62cfebcb4e4a36a28879e92d40f9ad5140240b52d076b5508d538a7939208ee",
+      "renderers": 314,
+      "slots": 1427
+    },
+    {
+      "file": "Assets/Environment/SipoMerchandise.fbx",
+      "sha256": "db4c149de6d4c18d0312ed6342eacb82b6307feebf6004b906a21d289bba80f8",
+      "renderers": 71,
+      "slots": 749
+    }
+  ]
+}
