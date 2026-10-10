@@ -12,10 +12,16 @@ OIDN=os.environ.get('OIDN_BIN','/workspace/tools/oidn/oidn-2.5.1.x86_64.linux/bi
 VIEWS={'hero':('01 Grand atrium','01-grand-atrium'),
        'produce':('02 Fresh garden','02-fresh-garden'),
        'gallery':('03 Mezzanine','03-mezzanine'),
-       'entrance':('04 Grand entrance','04-grand-entrance')}
+       'entrance':('04 Grand entrance','04-grand-entrance'),
+       'bakery':('05 Bakery','05-bakery'), 'snacks':('06 Snacks','06-snacks'),
+       'drinks':('07 Drinks','07-drinks'), 'frozen':('08 Frozen','08-frozen'),
+       'kitchen':('09 Kitchen','09-kitchen'), 'gym':('10 Gym','10-gym'),
+       'checkout':('11 Checkout','11-checkout'), 'firstperson':('12 First person','12-first-person')}
 
 def render_view(key,samples=32,percentage=100):
     name,slug=VIEWS[key];scene=bpy.context.scene
+    for o in scene.objects:
+        if o.get('preview_hands'):o.hide_render=key!='firstperson'
     scene.camera=bpy.data.objects[name];scene.cycles.samples=samples;scene.cycles.use_denoising=False
     scene.render.resolution_percentage=percentage
     scene.view_settings.exposure=-1.7

@@ -476,6 +476,9 @@ light('Welcome warm pool',(0,-1,6),'FFBE75',600,4,unity_intensity=1.5,ran=8)
 light('Canopy blue atmosphere',(0,0,11.8),'3978FF',550,4,unity_intensity=1.8,ran=12)
 for x in (-18,18):light('Gallery warm wash',(x,5,11.4),'FFE0B0',1800,8,unity_intensity=2.5,ran=20)
 
+# Apply the major environment-art revision to the existing layout.
+exec(compile((ROOT/'Tools/redesign_art.py').read_text(), str(ROOT/'Tools/redesign_art.py'), 'exec'))
+
 # Bake static meshes into material-aware spatial groups for a manageable Unity hierarchy.
 # Linked copies of the CC0 source meshes are consolidated; originals stay in ThirdParty.
 for proto,_ in PROTOS.values():bpy.data.objects.remove(proto,do_unlink=True)
@@ -524,7 +527,7 @@ for m in bpy.data.materials:
     p=m.node_tree.nodes.get('Principled BSDF') if m.use_nodes else None
     c=p.inputs['Base Color'].default_value[:3] if p else m.diffuse_color[:3]
     srgb=lambda v:12.92*v if v<=.0031308 else 1.055*v**(1/2.4)-.055
-    DATA['materials'].append({'name':m.name,'color':[srgb(v) for v in c],'roughness':.42,'metallic':0,'emission':[0,0,0],'emissionStrength':0})
+    DATA['materials'].append({'name':m.name,'color':[srgb(v) for v in c],'roughness':float(p.inputs['Roughness'].default_value) if p else .42,'metallic':float(p.inputs['Metallic'].default_value) if p else 0,'emission':[0,0,0],'emissionStrength':0})
 DATA['statistics']={'staticMeshes':sum(o.type=='MESH' for o in scene.objects),
                     'triangles':sum(sum(len(p.vertices)-2 for p in o.data.polygons) for o in scene.objects if o.type=='MESH'),
                     'reusedAssetTypes':len(PROTOS),'lightCount':len(DATA['lights']),'colliderCount':len(DATA['colliders'])}
@@ -555,13 +558,22 @@ def camera(name,loc,target,lens):
     o=bpy.data.objects.new(name,d);bpy.context.collection.objects.link(o);o.location=loc
     o.rotation_euler=(Vector(target)-o.location).to_track_quat('-Z','Y').to_euler();return o
 hero=camera('01 Grand atrium',(0,-20.4,3.5),(0,3.5,6.05),21)
-camera('02 Fresh garden',(-8,-10,3.4),(-6,4,3.3),24)
+camera('02 Fresh garden',(-8,-8.5,1.7),(-10,1,3),21)
 camera('03 Mezzanine',(-17,-8,8.5),(1,3,4.9),23)
 camera('04 Grand entrance',(0,-38,5.5),(0,-15,6.7),25)
+camera('05 Bakery',(-17.5,3.8,1.7),(-18,11,2.7),20)
+camera('06 Snacks',(-6.5,.8,1.7),(-6.5,8.6,2.7),21)
+camera('07 Drinks',(7,-12,1.7),(7,-4.3,2.6),21)
+camera('08 Frozen',(1,3,1.7),(1,10,2.7),20)
+camera('09 Kitchen',(-19,-6.7,7.5),(-19,.3,7.6),22)
+camera('10 Gym',(19,-6.7,7.5),(19,.3,7.6),22)
+camera('11 Checkout',(13,-20,1.7),(15,-10,3),19)
+camera('12 First person',(0,-17.8,1.7),(0,1,5.2),19)
 scene.camera=hero
+exec(compile((ROOT/'Tools/preview_hands.py').read_text(),str(ROOT/'Tools/preview_hands.py'),'exec'))
 # Save .blend outside Assets, so Unity never tries to launch Blender as an importer.
 source=ROOT/'ArtSource';source.mkdir(exist_ok=True)
-bpy.ops.wm.save_as_mainfile(filepath=str(source/'SipoSupermarket.blend'))
+bpy.ops.wm.save_as_mainfile(filepath=str(source/'SipoSupermarket.blend'),compress=True)
 print('SIPO_BUILD_COMPLETE '+json.dumps(DATA['statistics']),flush=True)
 if '--render' in sys.argv:
     import runpy

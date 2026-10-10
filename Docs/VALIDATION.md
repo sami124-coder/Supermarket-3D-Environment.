@@ -6,12 +6,14 @@
 - Re-ran the installation script against the retained installation successfully. Workspace-local XDG configuration/cache/data paths remove the original read-only home-directory errors.
 - Compiled all project C# sources with the editor's bundled Roslyn compiler against the actual UnityEngine, UnityEditor and URP template assemblies. `Tools/check_csharp.py` exits 0 with no compiler errors. This validates C# syntax and API compatibility, not native engine execution.
 - Verified SHA-256 hashes for all 53 retained CC0 source models, original license notices and standalone FBX conversions.
-- Generated the full environment FBX and editable `.blend` source. The export has 166 spatial mesh batches, 965,583 triangles, 23 reused grocery model types, 29 authored local lights and 116 collision volumes.
-- Independently re-imported the exported FBX in a clean Blender process. Verified all 166 meshes, material mappings, coordinate markers and metric bounds. Bounds in Blender coordinates are approximately `(-24.5, -32.0, -0.44)` to `(24.5, 22.5, 13.14)` metres, including the exterior paving.
-- Checked the initial spawn and all five scenic viewpoints for floor support and clearance from authored collision boxes. Corrected the bakery viewpoint that initially intersected a stocked shelf.
-- Verified the Open Image Denoise 2.5.1 archive against the SHA-256 published on its official RenderKit GitHub release: `743c3e2aff8c220d5d70fe6cb970fb3d36f2702d2693c61d1d148e404cf37cd6`.
-- Rendered and visually inspected the grand atrium (1600 × 1000), mezzanine (1280 × 800) and entrance (1280 × 800). All three use actual scene geometry, Cycles, 24 samples and an HDR denoising pass. Corrected the entrance glazing to use transmission in the source and transparent materials in Unity; C# compilation and FBX readback passed again after that change.
-- Follow-up preview verification: the mezzanine PNG fully decodes, is fully opaque, and its GitHub HTTP 200 response matches the local SHA-256. The only missing authored view was `02-fresh-garden.png`; it was rendered from the existing `.blend` without rebuilding geometry. All four previews now fully decode as nonblank PNGs. Their dimensions, sizes and hashes are recorded in `Docs/Previews/manifest.json`. The existing `.blend` opened successfully and the FBX readback passed again. No environment or gameplay source was changed for this verification.
+- Redesigned the existing environment and exported **194 spatial mesh batches**, **1,462,868 triangles**, **27 reused grocery types**, **39 authored local lights** and **118 collision boxes**. Six retained CC0 kitchen models are also placed in the scene.
+- Independently re-imported the revised FBX in a clean Blender process. Verified all 194 environment meshes, material mappings, four coordinate markers and metre-scale bounds: approximately `(-24.5, -32.0, -0.44)` to `(24.5, 22.5, 13.14)` in Blender coordinates.
+- Checked the spawn and all five existing scenic viewpoints for floor support and clearance. Cleared bakery frontage, moved the middle checkout around a column, and added static boundaries for the kitchen/gym furniture. These checks are not a substitute for a full licensed Unity collision walkthrough.
+- Original asset hashes and all 53 retained standalone CC0 FBX files pass validation. No gameplay C# sources were modified for the redesign.
+- Exported separate `FirstPersonHands.fbx` geometry for the static preview pose. It is excluded from the full environment FBX and is not rigged or attached by the Unity scene builder.
+- Python art, render and validation scripts pass syntax compilation. `git diff --check` reports no whitespace errors.
+- Final preview validation is recorded in `Docs/Previews/manifest.json`: twelve full PNG decodes, opacity/nonblank checks, dimensions, individual SHA-256 hashes and the source `.blend` hash. Ten requested subjects plus two overview views are rendered with actual scene geometry, Cycles (24 samples), HDR OIDN denoising and AgX. Atrium is 1600 × 1000; remaining views are 1280 × 800.
+- The official Open Image Denoise 2.5.1 archive was checksum verified: `743c3e2aff8c220d5d70fe6cb970fb3d36f2702d2693c61d1d148e404cf37cd6`.
 
 ## Unity activation blocker
 
@@ -43,6 +45,7 @@ From the repository root:
 
 ```bash
 python3 Tools/validate_assets.py
+python3 Tools/validate_previews.py
 python3 Tools/check_csharp.py
 blender --background --threads 1 --python-exit-code 1 --python Tools/validate_fbx.py
 ```

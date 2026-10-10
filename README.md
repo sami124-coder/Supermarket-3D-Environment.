@@ -4,6 +4,8 @@ A colorful, two-level supermarket built around a glowing celestial atrium. The e
 
 ![Grand atrium — Blender Cycles preview](Docs/Previews/01-grand-atrium.png)
 
+**Major art redesign:** [Comparison, changes and remaining differences](Docs/ART_REDESIGN.md) · [All ten requested views](Docs/GALLERY.md)
+
 **More views:** [Fresh garden](Docs/Previews/02-fresh-garden.png) · [Mezzanine and escalators](Docs/Previews/03-mezzanine.png) · [Grand entrance](Docs/Previews/04-grand-entrance.png)
 
 If an embedded preview displays **"No image"**, use the [direct PNG links and complete 3D preview guide](Docs/PREVIEW_GUIDE.md). The guide also distinguishes the existing `.blend`/FBX assets from the Unity scene that still needs licensed assembly.
@@ -13,7 +15,7 @@ If an embedded preview displays **"No image"**, use the [direct PNG links and co
 1. Install **Unity 6000.3.26f1 LTS** in Unity Hub and activate your eligible Unity license.
 2. Add this repository folder as a project, then open it. URP **17.3.0** is bundled with this editor.
 3. After scripts and assets import, the project assembles and opens `Assets/Scenes/SipoSupermarket.unity` automatically. If automatic assembly was deferred because another scene was dirty, use **Sipo → Build supermarket scene**.
-4. Press **Play**, then **Enter the supermarket**. The generated scene, materials, render settings, lights, colliders and player are ordinary editable Unity assets.
+4. Inspect the complete environment in **Scene view**. No Play mode is needed. The generated scene, materials, render settings, lights and colliders are ordinary editable Unity assets.
 
 The first import creates the populated `.unity` scene from the included FBX and `scene-data.json`. The project does not require Blender to open in Unity. Rebuilding through the menu replaces the generated scene; save personal scene edits under a different name before doing so.
 
@@ -39,18 +41,19 @@ The escalator treads are walkable stairs with handrail geometry. They are static
 
 - A 48 × 44 metre market, exterior entrance portal and welcome paving.
 - Two levels with a central atrium, mezzanine galleries and twin escalator flights.
-- An orange illuminated oculus, star canopy, planets, clouds and an original sun mascot.
-- Produce garden, bakery, snacks, frozen food, drinks, health and beauty, home, toys and upper-level departments.
+- An orange illuminated oculus, star canopy, planets, clouds and an original orbit-bear mascots.
+- Produce garden, bakery, snacks, frozen food, drinks, health and beauty, home, toys, a furnished upper-level kitchen and a colorful gym.
 - Stocked shelving, pastry displays, an information desk, three checkout lanes and seven nested carts.
-- Indoor trees, potted plants, trailing balcony greenery, polished tiled floors and brass inlays.
+- Indoor trees, potted plants, trailing balcony greenery, glossy flowing cobalt/pearl/tangerine floor rings and brass inlays.
 - URP Forward+ lighting, bloom, ACES tonemapping, reflection probe and first-person exploration UI.
-- 36 retained CC0 grocery models, 23 types placed repeatedly in the scene, plus 17 optional CC0 furniture, appliance and plant models.
+- 36 retained CC0 grocery models, 27 types placed repeatedly in the scene, plus 17 retained CC0 furniture models, six now reused in the kitchen.
+- Magenta lollipop sculptures, glazed doughnut arches, a rainbow drinks island, icy frozen motifs and a separate static first-person hand pose.
 
-The static environment is grouped into **166 spatial mesh batches**, approximately **966k triangles**, with **29 local lights** and **116 collision volumes**. Individual reusable models are retained separately for editing. This is a desktop-oriented scene; mobile or VR deployment needs profiling and a separate optimization pass.
+The static environment is grouped into **194 spatial mesh batches**, **1,462,868 triangles**, with **39 local lights** and **118 collision volumes**. Individual reusable models are retained separately for editing. This is a desktop-oriented scene; mobile or VR deployment needs profiling and a separate optimization pass.
 
 ## Reused assets and licenses
 
-The scene reuses **Kenney Food Kit 1.2**, under **CC0**. Original source assets, FBX conversions, original license files and SHA-256 manifests are included. Kenney Furniture Kit 2.0 is also supplied for further dressing. See [asset credits and provenance](Docs/ASSET_CREDITS.md).
+The scene reuses **Kenney Food Kit 1.2**, under **CC0**. Original source assets, FBX conversions, original license files and SHA-256 manifests are included. Kenney Furniture Kit 2.0 supplies the kitchen appliances and cabinets. See [asset credits and provenance](Docs/ASSET_CREDITS.md).
 
 ## Files
 
@@ -62,12 +65,13 @@ The scene reuses **Kenney Food Kit 1.2**, under **CC0**. Original source assets,
 | `Assets/Scripts/Runtime/` | Explorer, map, interface and player factory |
 | `Assets/ThirdParty/` | Licensed, reusable source models and FBX conversions |
 | `ArtSource/SipoSupermarket.blend` | Editable Blender scene, including preview cameras and lighting |
-| `Tools/build_supermarket.py` | Deterministic scene generation using retained CC0 assets |
+| `Tools/build_supermarket.py`, `Tools/redesign_art.py` | Existing layout and major visual art pass using retained CC0 assets |
+| `Assets/Environment/FirstPersonHands.fbx` | Separate unrigged preview pose, without gameplay behavior |
 | `Docs/Previews/` | Offline render evidence |
 
 ## Rebuild and validate
 
-From the repository root, with Blender 4.3.2 and DejaVu fonts installed:
+From the repository root, with Blender 4.3.2 and DejaVu fonts installed (PNG validation also requires Python Pillow, available as `python3-pil`):
 
 ```bash
 # Install the checksum-verified render denoiser outside the repository.
@@ -87,7 +91,7 @@ python3 Tools/check_csharp.py --editor /workspace/tools/unity/6000.3.26f1/Editor
 
 # Render other authored views without rebuilding geometry.
 blender -b ArtSource/SipoSupermarket.blend -t 5 --python-exit-code 1 \
-  --python Tools/render_views.py -- --views=gallery,entrance
+  --python Tools/render_views.py -- --views=produce,bakery,snacks,drinks,frozen,kitchen,gym,checkout,firstperson,gallery,entrance --samples=24 --percentage=80
 ```
 
 The source generator overwrites only its documented generated model, metadata, `.blend` and preview outputs. Exported lettering is mesh geometry and needs no installed fonts at runtime.

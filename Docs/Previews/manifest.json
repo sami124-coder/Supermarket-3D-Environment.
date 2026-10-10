@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceScene": "ArtSource/SipoSupermarket.blend",
-  "sourceSceneSha256": "355a2ed7bee3dc1d87f6fd72782da98b8e94a607985d7087efff37739c232f39",
-  "renderer": "Blender Cycles with HDR Open Image Denoise; not Unity captures",
+  "sourceSceneSha256": "f716e0c03e8c5c947c1cd224b3f0c02e8a3b185969879a5e36da7da0745cb1b0",
+  "renderer": "Blender Cycles, 24 samples, HDR Open Image Denoise; not Unity captures",
   "images": [
     {
       "file": "01-grand-atrium.png",
@@ -14,8 +14,8 @@
         255,
         255
       ],
-      "bytes": 2465350,
-      "sha256": "42d3f3da4304405709bdefec8db880e039e02a25ed749eda82000fb44a95656b",
+      "bytes": 2565345,
+      "sha256": "d7ad6b739ac21267085a552c2d856bdd47fd8cb26d8d39bef953484f4ec8ff29",
       "fullyDecoded": true
     },
     {
@@ -28,8 +28,8 @@
         255,
         255
       ],
-      "bytes": 1682503,
-      "sha256": "9eeab301bc2044e2b3372d44e263198975848e1a8b89fa1940a4064e781f16f3",
+      "bytes": 1655187,
+      "sha256": "3f2b903e81d9e5c2f7d639ad690ac0303f54a8e7b154a306336c06c302266a9d",
       "fullyDecoded": true
     },
     {
@@ -42,8 +42,8 @@
         255,
         255
       ],
-      "bytes": 1802588,
-      "sha256": "0acde709efeee295fe753057c386ebc21533abc30931a485db96fadd629172ae",
+      "bytes": 1837366,
+      "sha256": "5f2a15f71552266b20b36ac9b7dc52510764ef98a36cdb24cadb4e1ab5f5a2c9",
       "fullyDecoded": true
     },
     {
@@ -56,8 +56,120 @@
         255,
         255
       ],
-      "bytes": 1403352,
-      "sha256": "a0bc671bb45320db48fbccc5110eb70dfc8bc36fbdd335d760acfa6b573cc413",
+      "bytes": 1408423,
+      "sha256": "624635f6bd12cad191f82296da2bdbac68dd56856901015fd34d781ef60f70f1",
+      "fullyDecoded": true
+    },
+    {
+      "file": "05-bakery.png",
+      "format": "PNG",
+      "width": 1280,
+      "height": 800,
+      "mode": "RGBA",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "bytes": 1230791,
+      "sha256": "f6137f9ef077a3297b75620cf89560eb2b56a08d3f95b825f4cceef55a3d4a70",
+      "fullyDecoded": true
+    },
+    {
+      "file": "06-snacks.png",
+      "format": "PNG",
+      "width": 1280,
+      "height": 800,
+      "mode": "RGBA",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "bytes": 1568952,
+      "sha256": "aac14904a7f140929e819e21b304694aa04f1400a7d99f262761cb44841a9190",
+      "fullyDecoded": true
+    },
+    {
+      "file": "07-drinks.png",
+      "format": "PNG",
+      "width": 1280,
+      "height": 800,
+      "mode": "RGBA",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "bytes": 1685974,
+      "sha256": "968fb47b4f8b5ab93bf622c96c6ddf06b78aa63c204b3bcc6351de71606de129",
+      "fullyDecoded": true
+    },
+    {
+      "file": "08-frozen.png",
+      "format": "PNG",
+      "width": 1280,
+      "height": 800,
+      "mode": "RGBA",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "bytes": 1472882,
+      "sha256": "f622643dff5a6a3ccc43685d8e9941645c56a5ea52ee029a9ed0e0c5cba55a84",
+      "fullyDecoded": true
+    },
+    {
+      "file": "09-kitchen.png",
+      "format": "PNG",
+      "width": 1280,
+      "height": 800,
+      "mode": "RGBA",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "bytes": 1130906,
+      "sha256": "d6e8e6ab24e59cdf08af0becee28cc29361c1474fb701c0e158236946e10606b",
+      "fullyDecoded": true
+    },
+    {
+      "file": "10-gym.png",
+      "format": "PNG",
+      "width": 1280,
+      "height": 800,
+      "mode": "RGBA",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "bytes": 1200391,
+      "sha256": "1369a46d7355e20654d904c35532f93d129c1a529bf1796bcb765a97ebc68f10",
+      "fullyDecoded": true
+    },
+    {
+      "file": "11-checkout.png",
+      "format": "PNG",
+      "width": 1280,
+      "height": 800,
+      "mode": "RGBA",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "bytes": 1468204,
+      "sha256": "ecfed4447c9212a488426c04b3acad4344923869014b488493b51bd1c27fa181",
+      "fullyDecoded": true
+    },
+    {
+      "file": "12-first-person.png",
+      "format": "PNG",
+      "width": 1280,
+      "height": 800,
+      "mode": "RGBA",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "bytes": 1664787,
+      "sha256": "ce9b04cef18f522b4b0d7803c7530d6964c3039ae2a0ee9aaf3eac50a8a3ccdb",
       "fullyDecoded": true
     }
   ]
