@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e18ce0e2521d445eb44ff785264f66db, type: 3}
+  m_Name: SipoCinematicLightingSettings
+  m_EditorClassIdentifier:
+  layout: {fileID: 4900000, guid: 467661ced782424a9824b6c78ba3a678, type: 3}
+  lightIntensityMultiplier: 1
+  replaceGeneratedLighting: 1
+  polishSurfaces: 1
+  surfaces:
+    floorSmoothness: 1
+    chromeSmoothness: 0.9
+    goldSmoothness: 0.83
+    chromeMetallic: 0.98
+    goldMetallic: 0.86
+    blueSmoothness: 0.74
+    orangeSmoothness: 0.78
+    glassSmoothness: 0.94
+    warmEmissionMultiplier: 1.25
+    blueEmissionMultiplier: 1.1
+    ceilingEmissionMultiplier: 1.1
+    signEmissionCeiling: 1
+  enableAmbientOcclusion: 1
+  aoIntensity: 0.32
+  aoRadius: 0.35
+  msaaSamples: 1
+  shadowAtlasResolution: 2048
+  shadowDistance: 65
+  ambientSky: {r: 0.34, g: 0.43, b: 0.62, a: 1}
+  ambientEquator: {r: 0.36, g: 0.31, b: 0.25, a: 1}
+  ambientGround: {r: 0.16, g: 0.21, b: 0.31, a: 1}
+  ambientIntensity: 1
+  reflectionIntensity: 1
+  tonemapping: 2
+  postExposure: 0.25
+  bloomIntensity: 0.24
+  bloomThreshold: 1.2
+  bloomScatter: 0.6
+  contrast: 7
+  saturation: 6
+  temperature: 4
+  tint: 0
+  vignetteIntensity: 0.055

@@ -1,0 +1,1030 @@
+{
+  "schemaVersion": 1,
+  "description": "SIPO cinematic orange and cobalt: targeted human-scale retail pools beneath a luminous two-storey atrium. Starting values require an activated Unity editor for final image calibration.",
+  "coordinateSpace": "Unity world: X right, Y up, Z toward entrance; geometry and authored colors unchanged.",
+  "lightIntensityMultiplier": 1.0,
+  "lights": [
+    {
+      "name": "Atrium west warm key",
+      "type": "spot",
+      "position": [
+        -10,
+        12,
+        14
+      ],
+      "target": [
+        -6,
+        0,
+        6
+      ],
+      "color": [
+        1,
+        0.86,
+        0.69
+      ],
+      "intensity": 180,
+      "range": 27,
+      "spotAngle": 96,
+      "shadow": true,
+      "category": "atrium",
+      "bakeOnly": false
+    },
+    {
+      "name": "Atrium east pearl key",
+      "type": "spot",
+      "position": [
+        10,
+        12,
+        14
+      ],
+      "target": [
+        7,
+        0,
+        5
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 165,
+      "range": 27,
+      "spotAngle": 96,
+      "shadow": true,
+      "category": "atrium",
+      "bakeOnly": false
+    },
+    {
+      "name": "Atrium rear blue fill",
+      "type": "spot",
+      "position": [
+        0,
+        12,
+        -10
+      ],
+      "target": [
+        0,
+        0,
+        -8
+      ],
+      "color": [
+        0.66,
+        0.8,
+        1
+      ],
+      "intensity": 135,
+      "range": 24,
+      "spotAngle": 108,
+      "shadow": false,
+      "category": "atrium",
+      "bakeOnly": false
+    },
+    {
+      "name": "Arrival court warm canopy",
+      "type": "spot",
+      "position": [
+        0,
+        14,
+        23
+      ],
+      "target": [
+        0,
+        0,
+        22
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 185,
+      "range": 27,
+      "spotAngle": 112,
+      "shadow": false,
+      "category": "arrival",
+      "bakeOnly": false
+    },
+    {
+      "name": "Welcome crescent portrait key",
+      "type": "spot",
+      "position": [
+        -2,
+        6.5,
+        8
+      ],
+      "target": [
+        0,
+        1,
+        3
+      ],
+      "color": [
+        1,
+        0.86,
+        0.69
+      ],
+      "intensity": 45,
+      "range": 13,
+      "spotAngle": 72,
+      "shadow": true,
+      "category": "reception",
+      "bakeOnly": false
+    },
+    {
+      "name": "Orbit Club mascot portrait",
+      "type": "spot",
+      "position": [
+        -8,
+        12,
+        11
+      ],
+      "target": [
+        -8.52,
+        10.75,
+        4.83
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 38,
+      "range": 13,
+      "spotAngle": 62,
+      "shadow": false,
+      "category": "mascot",
+      "bakeOnly": false
+    },
+    {
+      "name": "West planetarium cobalt uplight",
+      "type": "point",
+      "position": [
+        -7,
+        12.5,
+        -3
+      ],
+      "target": [
+        -7,
+        15.5,
+        -3
+      ],
+      "color": [
+        0.22,
+        0.43,
+        1
+      ],
+      "intensity": 24,
+      "range": 11,
+      "spotAngle": 90,
+      "shadow": false,
+      "category": "ceiling",
+      "bakeOnly": false
+    },
+    {
+      "name": "East planetarium cobalt uplight",
+      "type": "point",
+      "position": [
+        7,
+        12.5,
+        -3
+      ],
+      "target": [
+        7,
+        15.5,
+        -3
+      ],
+      "color": [
+        0.22,
+        0.43,
+        1
+      ],
+      "intensity": 24,
+      "range": 11,
+      "spotAngle": 90,
+      "shadow": false,
+      "category": "ceiling",
+      "bakeOnly": false
+    },
+    {
+      "name": "West orbital amber bounce",
+      "type": "point",
+      "position": [
+        -16,
+        12,
+        0
+      ],
+      "target": [
+        -16,
+        13,
+        0
+      ],
+      "color": [
+        1,
+        0.43,
+        0.11
+      ],
+      "intensity": 20,
+      "range": 10,
+      "spotAngle": 90,
+      "shadow": false,
+      "category": "rings",
+      "bakeOnly": false
+    },
+    {
+      "name": "East orbital amber bounce",
+      "type": "point",
+      "position": [
+        16,
+        12,
+        0
+      ],
+      "target": [
+        16,
+        13,
+        0
+      ],
+      "color": [
+        1,
+        0.43,
+        0.11
+      ],
+      "intensity": 20,
+      "range": 10,
+      "spotAngle": 90,
+      "shadow": false,
+      "category": "rings",
+      "bakeOnly": false
+    },
+    {
+      "name": "Fresh garden orchard key",
+      "type": "spot",
+      "position": [
+        -14.2,
+        6,
+        4
+      ],
+      "target": [
+        -14.2,
+        1.4,
+        -2
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 80,
+      "range": 15,
+      "spotAngle": 100,
+      "shadow": false,
+      "category": "produce",
+      "bakeOnly": false
+    },
+    {
+      "name": "Juice island bottle highlights",
+      "type": "spot",
+      "position": [
+        10,
+        6,
+        13
+      ],
+      "target": [
+        10,
+        1,
+        6
+      ],
+      "color": [
+        1,
+        0.86,
+        0.69
+      ],
+      "intensity": 75,
+      "range": 15,
+      "spotAngle": 96,
+      "shadow": false,
+      "category": "drinks",
+      "bakeOnly": false
+    },
+    {
+      "name": "Bakery rear retail key",
+      "type": "spot",
+      "position": [
+        -25.56,
+        6,
+        -14
+      ],
+      "target": [
+        -25.56,
+        1.5,
+        -23.3
+      ],
+      "color": [
+        1,
+        0.86,
+        0.69
+      ],
+      "intensity": 90,
+      "range": 17,
+      "spotAngle": 106,
+      "shadow": false,
+      "category": "bakery",
+      "bakeOnly": false
+    },
+    {
+      "name": "Snacks rear retail key",
+      "type": "spot",
+      "position": [
+        -12.78,
+        6,
+        -14
+      ],
+      "target": [
+        -12.78,
+        1.5,
+        -23.3
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 85,
+      "range": 17,
+      "spotAngle": 106,
+      "shadow": false,
+      "category": "snacks",
+      "bakeOnly": false
+    },
+    {
+      "name": "Frozen rear retail key",
+      "type": "spot",
+      "position": [
+        0,
+        6,
+        -14
+      ],
+      "target": [
+        0,
+        1.5,
+        -23.3
+      ],
+      "color": [
+        0.66,
+        0.8,
+        1
+      ],
+      "intensity": 80,
+      "range": 17,
+      "spotAngle": 106,
+      "shadow": false,
+      "category": "frozen",
+      "bakeOnly": false
+    },
+    {
+      "name": "Drinks rear retail key",
+      "type": "spot",
+      "position": [
+        12.78,
+        6,
+        -14
+      ],
+      "target": [
+        12.78,
+        1.5,
+        -23.3
+      ],
+      "color": [
+        1,
+        0.86,
+        0.69
+      ],
+      "intensity": 90,
+      "range": 17,
+      "spotAngle": 106,
+      "shadow": false,
+      "category": "drinks",
+      "bakeOnly": false
+    },
+    {
+      "name": "Health and beauty rear retail key",
+      "type": "spot",
+      "position": [
+        25.56,
+        6,
+        -14
+      ],
+      "target": [
+        25.56,
+        1.5,
+        -23.3
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 80,
+      "range": 17,
+      "spotAngle": 106,
+      "shadow": false,
+      "category": "health-and-beauty",
+      "bakeOnly": false
+    },
+    {
+      "name": "West under-balcony arrival",
+      "type": "spot",
+      "position": [
+        -26,
+        6,
+        21
+      ],
+      "target": [
+        -27,
+        1,
+        21
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 60,
+      "range": 13,
+      "spotAngle": 118,
+      "shadow": false,
+      "category": "shelves",
+      "bakeOnly": false
+    },
+    {
+      "name": "West under-balcony middle",
+      "type": "spot",
+      "position": [
+        -26,
+        6,
+        7
+      ],
+      "target": [
+        -27,
+        1,
+        7
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 60,
+      "range": 13,
+      "spotAngle": 118,
+      "shadow": false,
+      "category": "shelves",
+      "bakeOnly": false
+    },
+    {
+      "name": "West under-balcony rear",
+      "type": "spot",
+      "position": [
+        -26,
+        6,
+        -7
+      ],
+      "target": [
+        -27,
+        1,
+        -7
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 60,
+      "range": 13,
+      "spotAngle": 118,
+      "shadow": false,
+      "category": "shelves",
+      "bakeOnly": false
+    },
+    {
+      "name": "East under-balcony arrival",
+      "type": "spot",
+      "position": [
+        26,
+        6,
+        21
+      ],
+      "target": [
+        27,
+        1,
+        21
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 60,
+      "range": 13,
+      "spotAngle": 118,
+      "shadow": false,
+      "category": "shelves",
+      "bakeOnly": false
+    },
+    {
+      "name": "East under-balcony middle",
+      "type": "spot",
+      "position": [
+        26,
+        6,
+        7
+      ],
+      "target": [
+        27,
+        1,
+        7
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 60,
+      "range": 13,
+      "spotAngle": 118,
+      "shadow": false,
+      "category": "shelves",
+      "bakeOnly": false
+    },
+    {
+      "name": "East under-balcony rear",
+      "type": "spot",
+      "position": [
+        26,
+        6,
+        -7
+      ],
+      "target": [
+        27,
+        1,
+        -7
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 60,
+      "range": 13,
+      "spotAngle": 118,
+      "shadow": false,
+      "category": "shelves",
+      "bakeOnly": false
+    },
+    {
+      "name": "Home studio upper storefront",
+      "type": "spot",
+      "position": [
+        -25.56,
+        13,
+        -20
+      ],
+      "target": [
+        -25.56,
+        8.8,
+        -27
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 60,
+      "range": 14,
+      "spotAngle": 96,
+      "shadow": false,
+      "category": "mezzanine",
+      "bakeOnly": false
+    },
+    {
+      "name": "Little wonders upper storefront",
+      "type": "spot",
+      "position": [
+        -12.78,
+        13,
+        -20
+      ],
+      "target": [
+        -12.78,
+        8.8,
+        -27
+      ],
+      "color": [
+        0.66,
+        0.8,
+        1
+      ],
+      "intensity": 60,
+      "range": 14,
+      "spotAngle": 96,
+      "shadow": false,
+      "category": "mezzanine",
+      "bakeOnly": false
+    },
+    {
+      "name": "Sunshine cafe upper storefront",
+      "type": "spot",
+      "position": [
+        0,
+        13,
+        -20
+      ],
+      "target": [
+        0,
+        8.8,
+        -27
+      ],
+      "color": [
+        1,
+        0.86,
+        0.69
+      ],
+      "intensity": 60,
+      "range": 14,
+      "spotAngle": 96,
+      "shadow": false,
+      "category": "mezzanine",
+      "bakeOnly": false
+    },
+    {
+      "name": "Play planet upper storefront",
+      "type": "spot",
+      "position": [
+        12.78,
+        13,
+        -20
+      ],
+      "target": [
+        12.78,
+        8.8,
+        -27
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 60,
+      "range": 14,
+      "spotAngle": 96,
+      "shadow": false,
+      "category": "mezzanine",
+      "bakeOnly": false
+    },
+    {
+      "name": "Botanica upper storefront",
+      "type": "spot",
+      "position": [
+        25.56,
+        13,
+        -20
+      ],
+      "target": [
+        25.56,
+        8.8,
+        -27
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 60,
+      "range": 14,
+      "spotAngle": 96,
+      "shadow": false,
+      "category": "mezzanine",
+      "bakeOnly": false
+    },
+    {
+      "name": "West upper arrival lounge",
+      "type": "spot",
+      "position": [
+        -26,
+        13,
+        19
+      ],
+      "target": [
+        -26,
+        7.7,
+        14
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 65,
+      "range": 14,
+      "spotAngle": 110,
+      "shadow": false,
+      "category": "mezzanine",
+      "bakeOnly": false
+    },
+    {
+      "name": "East upper arrival lounge",
+      "type": "spot",
+      "position": [
+        26,
+        13,
+        19
+      ],
+      "target": [
+        26,
+        7.7,
+        14
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 65,
+      "range": 14,
+      "spotAngle": 110,
+      "shadow": false,
+      "category": "mezzanine",
+      "bakeOnly": false
+    },
+    {
+      "name": "Kitchen demonstration key",
+      "type": "spot",
+      "position": [
+        -27,
+        13,
+        4
+      ],
+      "target": [
+        -27,
+        8.6,
+        -2
+      ],
+      "color": [
+        1,
+        0.86,
+        0.69
+      ],
+      "intensity": 65,
+      "range": 14,
+      "spotAngle": 98,
+      "shadow": false,
+      "category": "kitchen",
+      "bakeOnly": false
+    },
+    {
+      "name": "Gym studio cool fill",
+      "type": "spot",
+      "position": [
+        27,
+        13,
+        4
+      ],
+      "target": [
+        27,
+        8.6,
+        -2
+      ],
+      "color": [
+        0.66,
+        0.8,
+        1
+      ],
+      "intensity": 65,
+      "range": 14,
+      "spotAngle": 98,
+      "shadow": false,
+      "category": "gym",
+      "bakeOnly": false
+    },
+    {
+      "name": "Escalator landing wash",
+      "type": "spot",
+      "position": [
+        16,
+        12,
+        -13
+      ],
+      "target": [
+        16,
+        4,
+        -14
+      ],
+      "color": [
+        1,
+        0.94,
+        0.84
+      ],
+      "intensity": 100,
+      "range": 17,
+      "spotAngle": 90,
+      "shadow": false,
+      "category": "escalators",
+      "bakeOnly": false
+    },
+    {
+      "name": "Checkout customer-facing key",
+      "type": "spot",
+      "position": [
+        24,
+        5.8,
+        24
+      ],
+      "target": [
+        25,
+        1.5,
+        16
+      ],
+      "color": [
+        1,
+        0.86,
+        0.69
+      ],
+      "intensity": 70,
+      "range": 15,
+      "spotAngle": 108,
+      "shadow": false,
+      "category": "checkout",
+      "bakeOnly": false
+    },
+    {
+      "name": "West atrium cool bounce",
+      "type": "point",
+      "position": [
+        -8,
+        7,
+        16
+      ],
+      "target": [
+        -8,
+        3,
+        16
+      ],
+      "color": [
+        0.66,
+        0.8,
+        1
+      ],
+      "intensity": 20,
+      "range": 16,
+      "spotAngle": 90,
+      "shadow": false,
+      "category": "atrium",
+      "bakeOnly": false
+    },
+    {
+      "name": "East atrium cool bounce",
+      "type": "point",
+      "position": [
+        8,
+        7,
+        16
+      ],
+      "target": [
+        8,
+        3,
+        16
+      ],
+      "color": [
+        0.66,
+        0.8,
+        1
+      ],
+      "intensity": 20,
+      "range": 16,
+      "spotAngle": 90,
+      "shadow": false,
+      "category": "atrium",
+      "bakeOnly": false
+    }
+  ],
+  "reflections": [
+    {
+      "name": "Atrium full market HDR",
+      "position": [
+        0,
+        3.2,
+        12
+      ],
+      "size": [
+        70,
+        17,
+        65
+      ],
+      "center": [
+        0,
+        8,
+        0
+      ],
+      "resolution": 512,
+      "importance": 0
+    },
+    {
+      "name": "West upper gallery HDR",
+      "position": [
+        -26,
+        9.1,
+        10
+      ],
+      "size": [
+        15,
+        10,
+        59
+      ],
+      "center": [
+        -27,
+        10.5,
+        0
+      ],
+      "resolution": 256,
+      "importance": 2
+    },
+    {
+      "name": "East upper gallery HDR",
+      "position": [
+        26,
+        9.1,
+        10
+      ],
+      "size": [
+        15,
+        10,
+        59
+      ],
+      "center": [
+        27,
+        10.5,
+        0
+      ],
+      "resolution": 256,
+      "importance": 2
+    },
+    {
+      "name": "Rear retail HDR",
+      "position": [
+        5,
+        3.2,
+        -19
+      ],
+      "size": [
+        68,
+        8,
+        19
+      ],
+      "center": [
+        0,
+        4,
+        -24
+      ],
+      "resolution": 256,
+      "importance": 1
+    },
+    {
+      "name": "Fresh garden HDR",
+      "position": [
+        -9,
+        3,
+        1
+      ],
+      "size": [
+        22,
+        8,
+        25
+      ],
+      "center": [
+        -15,
+        4,
+        -2
+      ],
+      "resolution": 256,
+      "importance": 2
+    },
+    {
+      "name": "Drinks and checkout HDR",
+      "position": [
+        7,
+        3,
+        10
+      ],
+      "size": [
+        30,
+        8,
+        29
+      ],
+      "center": [
+        17,
+        4,
+        10
+      ],
+      "resolution": 256,
+      "importance": 2
+    }
+  ]
+}

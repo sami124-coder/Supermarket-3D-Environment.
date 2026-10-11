@@ -1,0 +1,56 @@
+{
+  "unity": "6000.3.26f1",
+  "urp": "17.3.0",
+  "csharpCompilationAgainstInstalledUnityAndUrpAssemblies": "passed",
+  "serializedConfigurationAudit": {
+    "status": "passed",
+    "presetLinks": 2,
+    "boundedScalars": 27,
+    "guardedUrpFields": 24,
+    "uniqueAssetGuids": 149
+  },
+  "spatialLayoutAudit": {
+    "status": "passed",
+    "lights": 36,
+    "spotlights": 30,
+    "pointLights": 6,
+    "shadowCastingSpotlights": 3,
+    "reflectionProbes": 6,
+    "coveredLandmarks": 24
+  },
+  "materialMappingRegression": {
+    "result": "passed",
+    "assertions": 13284,
+    "renderers": 385,
+    "slots": 2176,
+    "sourceNames": 215,
+    "modelParts": 2,
+    "unityImportExecuted": false,
+    "editorSourceSha256": "0d178c98a06a8b2696235f0162851ea2fdf58369f517cd4f58f2d3f0ee86dece",
+    "parts": [
+      {
+        "file": "Assets/Environment/SipoSupermarket.fbx",
+        "sha256": "c62cfebcb4e4a36a28879e92d40f9ad5140240b52d076b5508d538a7939208ee",
+        "renderers": 314,
+        "slots": 1427
+      },
+      {
+        "file": "Assets/Environment/SipoMerchandise.fbx",
+        "sha256": "db4c149de6d4c18d0312ed6342eacb82b6307feebf6004b906a21d289bba80f8",
+        "renderers": 71,
+        "slots": 749
+      }
+    ]
+  },
+  "originalGeometryMaterialsScenesGameplayAndMappingScriptModified": false,
+  "nativeUnitySceneCommandsExecuted": false,
+  "nativeRenderedAppearanceVerified": false,
+  "nativeLimitation": "The installed Unity Editor cannot activate in this cloud environment (exit 198: No valid Unity Editor license found). Compilation and source/asset audits do not verify import, reflection capture, command lifecycle or image quality.",
+  "requiredLocalChecks": [
+    "Apply to a backed-up saved existing scene",
+    "Capture Cinematic Reflection Probes",
+    "Validate Cinematic Lighting",
+    "Inspect both floors in Game view and tune settings",
+    "Reapply/capture/validate then Restore to check local repeatability before accepting and saving"
+  ]
+}
