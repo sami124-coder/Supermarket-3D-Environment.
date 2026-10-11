@@ -8,6 +8,8 @@ A colorful, two-level supermarket built around a glowing celestial atrium. The e
 
 **More views:** [Fresh garden](Docs/Previews/02-fresh-garden.png) · [Mezzanine and escalators](Docs/Previews/03-mezzanine.png) · [Flagship mascot](Docs/Previews/13-mascot-detail.png)
 
+**New additive Fresh Produce department:** [Preview gallery, asset details, and safe Unity installation](Docs/FRESH_PRODUCE_DEPARTMENT.md). Includes editable Blender source, two new FBXs, 74 stocked crates, a lush tree and illuminated emerald sign. Use **Sipo → Install Fresh Produce Department** in your existing scene; occupied placement uses a separate staging area. Original geometry, material fixes, cinematic settings, and gameplay are preserved.
+
 If an embedded preview displays **"No image"**, use the [direct PNG links and complete 3D preview guide](Docs/PREVIEW_GUIDE.md). The guide also distinguishes the existing `.blend`/FBX assets from the Unity scene that still needs licensed assembly.
 
 ## Open in Unity

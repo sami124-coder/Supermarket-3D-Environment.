@@ -1,0 +1,142 @@
+{
+  "status": "passed",
+  "statistics": {
+    "produceInstances": 1851,
+    "instanceCounts": {
+      "WoodCrate": 74,
+      "RedApple": 212,
+      "OrangeFruit": 212,
+      "GreenApple": 120,
+      "YellowPear": 120,
+      "banana": 57,
+      "RedPepper": 120,
+      "pineapple": 69,
+      "broccoli": 69,
+      "grapes": 57,
+      "carrot": 60,
+      "YellowPepper": 138,
+      "lemon": 120,
+      "cabbage": 57,
+      "tomato": 164,
+      "fish": 44,
+      "sodaBottle": 232
+    },
+    "highLodTriangles": 1779433,
+    "lowLodTriangles": 361794,
+    "sceneMeshes": 220,
+    "reusableAssets": 22,
+    "lodGroups": 106
+  },
+  "fbxParts": [
+    {
+      "file": "Assets/FreshProduce/Models/SipoFreshProduce.fbx",
+      "renderers": 220,
+      "materialSlots": 2199,
+      "sourceMaterials": 78,
+      "sha256": "e723f2d69652592dcc6e76914fad400f2cdc90da4c4f4cce0560ecc546c01def"
+    },
+    {
+      "file": "Assets/FreshProduce/Models/SipoProduceLibrary.fbx",
+      "renderers": 22,
+      "materialSlots": 87,
+      "sourceMaterials": 79,
+      "sha256": "3cb27dbeab31778756819d00855785181e850acc336a0155e0cf5510bcea5fa9"
+    }
+  ],
+  "safeWalkingLandmarks": 6,
+  "collisionGridSpacingMetres": 0.25,
+  "testedCapsuleRadiusMetres": 0.3,
+  "boundsContainAllModuleMeshes": true,
+  "nativeUnityImportExecuted": false,
+  "nativeUnityRenderingVerified": false,
+  "productionMaterialMappingRegression": {
+    "result": "passed",
+    "assertions": 13886,
+    "renderers": 242,
+    "slots": 2286,
+    "sourceNames": 157,
+    "modelParts": 2,
+    "unityImportExecuted": false
+  },
+  "originalSupermarketMappingRegression": {
+    "result": "passed",
+    "assertions": 13284,
+    "renderers": 385,
+    "slots": 2176,
+    "sourceNames": 215,
+    "modelParts": 2,
+    "unityImportExecuted": false,
+    "editorSourceSha256": "0d178c98a06a8b2696235f0162851ea2fdf58369f517cd4f58f2d3f0ee86dece",
+    "parts": [
+      {
+        "file": "Assets/Environment/SipoSupermarket.fbx",
+        "sha256": "c62cfebcb4e4a36a28879e92d40f9ad5140240b52d076b5508d538a7939208ee",
+        "renderers": 314,
+        "slots": 1427
+      },
+      {
+        "file": "Assets/Environment/SipoMerchandise.fbx",
+        "sha256": "db4c149de6d4c18d0312ed6342eacb82b6307feebf6004b906a21d289bba80f8",
+        "renderers": 71,
+        "slots": 749
+      }
+    ]
+  },
+  "sourceCompilation": {
+    "passed": true,
+    "editor": "6000.3.26f1",
+    "pipeline": "URP 17.3.0",
+    "nativeUnityExecuted": false,
+    "editorScriptSha256": "e93405d494bfb915c5f5d7a5493fd896a49f6f47ad0277970723ad93b965b2aa"
+  },
+  "newAssetMetaGuidsUnique": true,
+  "protectedOriginalPathsUnchanged": [
+    "Assets/Environment/SipoSupermarket.fbx",
+    "Assets/Environment/SipoMerchandise.fbx",
+    "Assets/Editor/SupermarketProject.cs",
+    "Assets/Editor/SipoCinematicLighting.cs",
+    "Assets/Scripts",
+    "Packages",
+    "ProjectSettings",
+    "ArtSource/SipoSupermarket.blend",
+    "ArtSource/SipoMerchandiseLibrary.blend"
+  ],
+  "previews": {
+    "renderer": "Blender 4.3.2 Cycles, 48 samples, OIDN 2.5.1",
+    "nativeUnityScreenshots": false,
+    "images": [
+      {
+        "file": "Docs/Previews/FreshProduce/01-hero.png",
+        "format": "PNG",
+        "width": 1600,
+        "height": 1000,
+        "bytes": 2432209,
+        "sha256": "09ea7e220bc5ef352814d3f352b0ae902b513fa84274ff6ec21c9d76e92e2e9d"
+      },
+      {
+        "file": "Docs/Previews/FreshProduce/02-eye-level.png",
+        "format": "PNG",
+        "width": 1600,
+        "height": 1000,
+        "bytes": 2538614,
+        "sha256": "ffe2122ef6afa4c2c0eebb2cb85e3728850e0654b231baeff753ca648d7d9d21"
+      },
+      {
+        "file": "Docs/Previews/FreshProduce/03-elevated.png",
+        "format": "PNG",
+        "width": 1600,
+        "height": 1000,
+        "bytes": 2651327,
+        "sha256": "d3567136e15174d51e4254c954d93d8f45a19ef3b7aca6bcfea79583706b2088"
+      },
+      {
+        "file": "Docs/Previews/FreshProduce/04-detail.png",
+        "format": "PNG",
+        "width": 1600,
+        "height": 1000,
+        "bytes": 2177632,
+        "sha256": "47bbfa8ac28bf24adc13c68b35bcb256914ff7db4d4f75f53cd0a5c5b81bf700"
+      }
+    ]
+  }
+}

@@ -18,3 +18,13 @@ Signage uses outlines from **DejaVu Sans Condensed Bold** and **DejaVu Sans Bold
 Unity and the Universal Render Pipeline retain their own licenses. The editor installation is outside this repository and is not redistributed with the project.
 
 The grand retail hall pass also instances retained tableRound, chairRounded and other furniture into upper boutiques and lounges. Its 1024px porcelain data maps are original procedural project textures. Label graphics, detailed Orbit Club mascot sculptures, shaped leaf meshes, awnings, windows and café/gym dressings are original project geometry. The retained CC0 distribution files and original notices remain unchanged.
+
+## Additive Fresh Produce Department
+
+`ArtSource/SipoFreshProduce.blend` and `Tools/build_fresh_produce.py` create a separate department; the original supermarket Blender files and both environment FBXs remain unchanged. New produce-display fixtures, emerald sign architecture, crates, lettering, decorative icons, foliage arrangements, lighting layout, and procedural surface textures are original project work. The hero apple, orange, pepper, and pear meshes are original project models. The department reuses a copy of the project's original Orbit Club garden mascot, retaining its existing design and materials.
+
+The department also reuses the retained **Kenney Food Kit 1.2 (CC0)** models for banana, broccoli, carrot, grapes, pineapple, cabbage, lemon, watermelon, eggplant, corn, tomato, soda bottle, and fish. These are copies of the already documented source files under `Assets/ThirdParty/KenneyFoodKit/Source/`; the original source and license notices are preserved. `Assets/ThirdParty/KenneyFoodKit/manifest.json` records the retained distributions and hashes. The pack and distribution links in the table above apply to this department as well. No newly downloaded third-party model is required by this module.
+
+All thirteen types are included in the reusable source library. Watermelon, eggplant, and corn are library-only options in this composition; the other ten licensed types are placed in the department.
+
+Sign lettering is exported as geometry from the existing DejaVu font family; the retained notice is `Docs/Licenses/DejaVu.txt`. The user-supplied reference guides architecture, color, density, and composition; it is not redistributed as a texture or used as a flat replacement for the modeled environment.
